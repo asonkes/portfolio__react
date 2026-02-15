@@ -1,0 +1,16 @@
+:root {
+  --breakpoint-xxl-big: 1500px;
+  --breakpoint-xxl-lg: 1300px;
+  --breakpoint-xxl-md: 1100px;
+  --breakpoint-lg-big: 992px;
+  --breakpoint-lg-md: 800px;
+  --breakpoint-md-big: 650px;
+  --breakpoint-md: 600px;
+  --breakpoint-s: 500px;
+  --breakpoint-s-big: 450px;
+  --breakpoint-xs: 400px;
+  --breakpoint-xs-big: 350px;
+  --breakpoint-xsss: 280px;
+
+  --bg: #6461f2;
+}
