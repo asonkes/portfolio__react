@@ -1,0 +1,163 @@
+{
+  "skills": [
+    {
+      "id": 0,
+      "title": "html/css"
+    },
+    {
+      "id": 1,
+      "title": "JS"
+    },
+    {
+      "id": 2,
+      "title": "Node"
+    },
+    {
+      "id": 3,
+      "title": "React"
+    },
+    {
+      "id": 4,
+      "title": "PHP"
+    },
+    {
+      "id": 5,
+      "title": "Symfony"
+    },
+    {
+      "id": 6,
+      "title": "Sass"
+    },
+    {
+      "id": 7,
+      "title": "Tailwind"
+    },
+    {
+      "id": 8,
+      "title": "NoSql"
+    },
+    {
+      "id": 9,
+      "title": "MySql"
+    },
+    {
+      "id": 10,
+      "title": "WordPress"
+    },
+    {
+      "id": 11,
+      "title": "Figma"
+    },
+    {
+      "id": 12,
+      "title": "Github"
+    }
+  ],
+
+  "projects": [
+    {
+      "id": 0,
+      "date": "",
+      "formation": "Interface3",
+      "type": "TodoList React",
+      "title": "TodoList",
+      "img": "",
+      "site": "",
+      "maquette": "",
+      "git": "",
+      "code": "",
+      "description": "Exercice de base en React, permettant de reprendre toutes les bases de React pour évoluer par la suite."
+    },
+    {
+      "id": 1,
+      "date": "",
+      "formation": "Interface3",
+      "type": "WordPress Examen",
+      "title": "GossipCop",
+      "img": "",
+      "site": "https://wordpress.audrey-sonkes.be/",
+      "maquette": "",
+      "git": "",
+      "code": "",
+      "description": "Réalisation d'un projet en utilisant WordPress comme base."
+    },
+    {
+      "id": 2,
+      "date": "novembre 2024",
+      "formation": "EPSE",
+      "type": "Projet TEI",
+      "title": "Ferme de Warelles",
+      "img": "/src/assets/images/projects/fermeDeWarelles.webp",
+      "site": "https://fermedewarelles.audrey-sonkes.be/",
+      "maquette": "https://www.figma.com/design/r9p9oupFqemCvu8LSEiBkc/TEI---Octobre-2024?node-id=0-1&node-type=canvas&t=JLZ1C2jnSd4RS4Wh-0",
+      "git": "https://github.com/asonkes/fermeDeTiti",
+      "code": "Symfony - PHP - SCSS - Twig - JS",
+      "description": "Site e-commerce en Symfony dédié à la vente de produits BIO provenant de la ferme et d'autres producteurs locaux. Possibilité pour les utilisateurs de 'liker' différents produits, paiement en ligne via la plateforme 'Stripe'. Tout a été misé sur la fluidité de navigation pour le consommateur. La maquette de ce projet a été réalisé entièrement par mes soins."
+    },
+    {
+      "id": 3,
+      "date": "juin 2024",
+      "formation": "EPSE",
+      "type": "Projet fin d'étude",
+      "title": "Jacadi",
+      "img": "/src/assets/images/projects/jacadi.webp",
+      "site": "https://jacadi.audrey-sonkes.be/",
+      "maquette": "www.figma.com/design/w6XUCOSEukmwK0zdTs9kYm/Jacadi?node-id=0-1&p=f",
+      "git": "https://github.com/asonkes/Jacadi",
+      "code": "Symfony - PHP - SCSS - Twig - JS",
+      "description": "Site e-commerce en Symfony dédié à la vente de vêtements pour bébés (de 3 à 36 mois) et pour enfants (de 2 à 14ans). La possibilité pour les utilisateurs de 'liker' différents produits n'est pas fonctionnelle, et le paiement en ligne n'est pas possible. De plus, la fluidité de navigation pour le consommateur ne me semble pas encore assez aboutie. Tous les éléments manquants et les améliorations seront intégrés dans le projet de mon TEI. La maquette de ce projet a été réalisée entièrement par mes soins."
+    },
+    {
+      "id": 4,
+      "date": "février 2024",
+      "formation": "EPSE",
+      "type": "WordPress Examen",
+      "title": "GossipCop",
+      "img": "/src/assets/images/projects/gossipCop.webp",
+      "site": "https://wordpress.audrey-sonkes.be/",
+      "maquette": "",
+      "git": "",
+      "code": "HTML - CSS - PHP - JS",
+      "description": "Réalisation d'un projet en utilisant WordPress comme base."
+    },
+    {
+      "id": 5,
+      "date": "décembre 2023",
+      "formation": "EPSE",
+      "type": "1er Projet Symfony",
+      "title": "SpeedCare",
+      "img": "/src/assets/images/projects/garage.webp",
+      "site": "https://garage.audrey-sonkes.be/",
+      "maquette": "",
+      "git": "https://github.com/asonkes/garage",
+      "code": "Synfony - PHP - CSS - Twig - JS",
+      "description": "Mon 1er projet e-commerce en Symfony, base de données est existante mais l'intégration des images se fait essentiellement par les URL. Il est possible de modifier les annonces en modififant les URL. La fonctionnalité de connexion et de déconnexion fonctionnent. Et l'admin est reconnu lors de la connexion pour pouvoir modifier les annonces. La conception de la maquette a été fournie par notre professeur, et j'ai réalisé sa mise en oeuvre en HTML et CSS."
+    },
+    {
+      "id": 7,
+      "date": "juin 2023",
+      "formation": "EPSE",
+      "type": "Projet Fin 1ère année",
+      "title": "LollyPop",
+      "img": "/src/assets/images/projects/lollyPop.webp",
+      "site": "https://lollypop.audrey-sonkes.be/",
+      "maquette": "https://www.figma.com/design/MlXQKciGyBfEEL6uZAZzW8/Projet-examen-(version-ordinateur)?node-id=0-1&node-type=canvas&t=EYSRmEPJ2eJ5zgo4-0",
+      "git": "https://github.com/asonkes/projet-fin-d-annee-2023",
+      "code": "HTML - CSS",
+      "description": "Projet de fin d'année 2023 réaklisé en HTML et CSS. La conception de la mise en page a été entièrement imaginé par mes soins."
+    },
+    {
+      "id": 8,
+      "date": "décembre 2022",
+      "formation": "EPSE",
+      "type": "Projet Cours(HTML/CSS)",
+      "title": "50 Nuances de Grey",
+      "img": "/src/assets/images/projects/50NuancesDeGrey.webp",
+      "site": "https://50nuancesdegrey.audrey-sonkes.be/",
+      "maquette": "",
+      "git": "https://github.com/asonkes/50NuancesDeGrey",
+      "code": "HTML - CSS",
+      "description": "Exercice réalisé entièrement en HTML et CSS. La conception de la mise en page a été entièrement imaginé par mes soins."
+    }
+  ]
+}

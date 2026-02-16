@@ -8,12 +8,12 @@ export const About = () => {
   return (
     <>
       <FullScreen
-        className="h-screen border-4 border-orange-400"
+        className="flex flex-col min-h-screen border-4 border-orange-400"
         bgImage={bgAbout}
       >
         <Title title="About" />
-        <div className="h-full">
-          <SplitScreen className="h-full flex justify-center items-center border-4 border-yellow-400">
+        <div className="w-full max-w-7xl flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row border-4 border-red-400">
+          <SplitScreen className="flex justify-center items-center border-4 border-yellow-400">
             <Text className="text-center tracking-wider p-5">
               <span className="text-indigo-500 text-4xl">" </span>
               <span className="text-fuchsia-300 text-2xl italic">
@@ -31,8 +31,10 @@ export const About = () => {
               <span className="text-indigo-500 text-4xl"> "</span>
             </Text>
           </SplitScreen>
-          <SplitScreen>
-            <Text className="">Mes compétences</Text>
+          <SplitScreen className="border-4 border-b-blue-400">
+            <Text className="text-white text-center tracking-wider p-5">
+              Mes compétences
+            </Text>
           </SplitScreen>
         </div>
       </FullScreen>
