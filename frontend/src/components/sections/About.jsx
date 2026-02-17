@@ -31,8 +31,8 @@ export const About = () => {
               <span className="text-indigo-500 text-4xl"> "</span>
             </Text>
           </SplitScreen>
-          <SplitScreen className="border-4 border-b-blue-400">
-            <Text className="text-white text-center tracking-wider p-5">
+          <SplitScreen>
+            <Text className="border-4 text-white text-center text-3xl tracking-wider p-5">
               Mes compétences
             </Text>
           </SplitScreen>

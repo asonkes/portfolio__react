@@ -2,55 +2,78 @@
   "skills": [
     {
       "id": 0,
-      "title": "html/css"
+      "title": "html",
+      "img": "/src/assets/skills/html.png"
     },
     {
       "id": 1,
-      "title": "JS"
+      "title": "CSS",
+      "img": "/src/assets/skills/css.png"
     },
     {
       "id": 2,
-      "title": "Node"
+      "title": "JS",
+      "img": "/src/assets/skills/javascript.png"
     },
     {
       "id": 3,
-      "title": "React"
+      "title": "NodeJS",
+      "img": "/src/assets/skills/nodejs.png"
     },
     {
       "id": 4,
-      "title": "PHP"
+      "title": "React",
+      "img": "/src/assets/skills/react.png"
     },
     {
       "id": 5,
-      "title": "Symfony"
+      "title": "PHP",
+      "img": "/src/assets/skills/php.png"
     },
     {
       "id": 6,
-      "title": "Sass"
+      "title": "Symfony",
+      "img": "/src/assets/skills/symfony.png"
     },
     {
       "id": 7,
-      "title": "Tailwind"
+      "title": "Sass",
+      "img": "/src/assets/skills/sass.png"
     },
     {
       "id": 8,
-      "title": "NoSql"
+      "title": "Tailwind",
+      "img": "/src/assets/skills/tailwind.png"
     },
     {
       "id": 9,
-      "title": "MySql"
+      "title": "NoSql",
+      "img": "/src/assets/skills/mongoDB.png"
     },
     {
       "id": 10,
-      "title": "WordPress"
+      "title": "MySql",
+      "img": "/src/assets/skills/mysql.png"
     },
     {
       "id": 11,
-      "title": "Figma"
+      "title": "WordPress",
+      "img": "/src/assets/skills/wordpress.png"
     },
     {
       "id": 12,
-      "title": "Github"
+      "title": "Figma",
+      "img": "/src/assets/skills/figma.png"
+    },
+    {
+      "id": 13,
+      "title": "Git",
+      "img": "/src/assets/skills/git.png"
+    },
+    {
+      "id": 14,
+      "title": "Github",
+      "img": "/src/assets/skills/github.png"
     }
   ],
 
