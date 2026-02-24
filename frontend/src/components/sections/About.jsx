@@ -21,7 +21,6 @@ export const About = () => {
     // Quand on créé un 'observer' => on reçoit en retour un tableau(entries)
     // entries[0] ==> veut dire ==> 'utilisateur n'est pas encore passé sur l'élément'
     const observer = new IntersectionObserver((entries) => {
-      console.log("visible", entries[0].isIntersecting);
       if (entries[0].isIntersecting) {
         setIsVisible(true);
         observer.unobserve(textRef.current);
