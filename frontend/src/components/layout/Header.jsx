@@ -1,7 +1,6 @@
 import { useState } from "react";
 
 export const Header = () => {
-
   const [showMenu, setShowMenu] = useState(false);
   const [isActive, setIsActive] = useState(false);
 
@@ -22,7 +21,7 @@ export const Header = () => {
             <a href="#">Contact</a>
           </li>
         </ul>
-        <div className="block text-white text-xl lg:hidden">
+        {/* <div className="block text-white text-xl lg:hidden">
           <i 
             class="fa-solid fa-bars"
           >
@@ -32,7 +31,7 @@ export const Header = () => {
             className={isActive ? "hidden" : "block"}
           >
           </i>
-        </div>
+        </div> */}
       </nav>
     </header>
   );
