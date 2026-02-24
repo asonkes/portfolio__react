@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { FullScreen } from "../layout/FullScreen";
 import { SplitScreen } from "../layout/SplitScreen";
 import { Title } from "../ui/Title";
@@ -12,24 +12,24 @@ export const About = () => {
 
   // Cet élément va apparaître 1fois
   // Seulement après la 1ere apparition dans le DOM de son élément
-  useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      console.log(entries);
-      if(entries[0].isIntersecting) {
-        textRef.current.classList.add("active");
-        observer.unobserve(textRef.current);
-      }
-    });
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(entries => {
+  //     console.log(entries);
+  //     if(entries[0].isIntersecting) {
+  //       textRef.current.classList.add("active");
+  //       observer.unobserve(textRef.current);
+  //     }
+  //   });
 
-    // On va observer la référence de notre élément
-    observer.observe(textRef.current);
+  //   // On va observer la référence de notre élément
+  //   // observer.observe(textRef.current);
 
-    // C'est une 'cleanUp' fonction (permet de nettoyer si éléent est apparu)
-    // Pour plus qu'il reste dans la mémoire
-    return () => {
-      observer.unobserve(textRef.current)
-    }
-  }, []);
+  //   // C'est une 'cleanUp' fonction (permet de nettoyer si éléent est apparu)
+  //   // Pour plus qu'il reste dans la mémoire
+  //   return () => {
+  //     observer.unobserve(textRef.current)
+  //   }
+  // }, []);
 
   return (
     <>
@@ -41,7 +41,8 @@ export const About = () => {
         <div className="w-full max-w-7xl flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row border-4 border-red-400">
           <SplitScreen className="flex justify-center items-center border-4 border-yellow-400">
             <Text 
-              className="text-center tracking-wider p-5 -translate-x-full opacity-0 bg-amber-500 "
+              className="text-center tracking-wider p-5"
+              //-translate-x-full opacity-0 bg-amber-500
               ref={textRef}
             >
               <span className="text-indigo-500 text-4xl">" </span>
