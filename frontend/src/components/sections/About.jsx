@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { useRef, useEffect, useState } from "react";
 import { FullScreen } from "../layout/FullScreen";
 import { SplitScreen } from "../layout/SplitScreen";
@@ -11,45 +10,55 @@ export const About = () => {
   const textRef = useRef(null);
 
   // Appel à l'API
-  const [APIState, setAPIState] = useState([])
+  const [APIState, setAPIState] = useState({
+    error: false,
+    data: undefined,
+  });
 
   // On appelle les data
   // video : 11min56
   useEffect(() => {
-    setAPIState(...APIState)
-    fetch(`http://localhost:5173/db.json`)
-    .then(res => {
-      console.log(res);
-      return res.json()
-    })
-    .then(data => {
-      console.log(data);
-      setAPIState({error: false, data: data})
-    })
-    .catch((error) => {
-      console.log(error);
-      setAPIState({error: true, data: undefined})
-    })
-
+    fetch("http://localhost:3000/skills")
+      .then((res) => {
+        console.log(res);
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setAPIState({ error: false, data });
+      })
+      .catch((error) => {
+        console.log(error);
+        setAPIState({ error: true, data: undefined });
+      });
   }, []);
 
   // Contenu que l'on veut retourner
   let content;
-  if(APIState.loading) content = <p>load....</p>
-  else if(APIState.error) content = <p>Une erreur est survenue...</p>
-  else if(APIState.data?.length > 0) {
-    content = <div>
-      {APIState.data.map(element => {
-        <div key={element.id}>
-          <img src={element.img} alt={element.title} />
-        </div>
-      })}
-    </div>
+  if (APIState.error) content = <p>Une erreur est survenue...</p>;
+  else if (APIState.data?.length > 0) {
+    content = (
+      <>
+        {APIState.data.map((element) => {
+          return (
+            <li
+              key={element.id}
+              className="w-20 h-20 flex justify-center items-center rounded-xl"
+              style={{ background: "var(--color-mix-special)" }}
+            >
+              <img
+                src={element.img}
+                alt={element.title}
+                className="w-14 h-14 p-1 bg-white-special object-contain rounded-md"
+              />
+            </li>
+          );
+        })}
+      </>
+    );
+  } else if (APIState.data?.length === 0) {
+    content = <p>Votre requête ne correspond à aucune donnée !</p>;
   }
-  else if(APIState.data?.length === 0) {
-    content = <p>Votre requête ne correspond à aucune donnée !</p>
-  }
-
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -111,8 +120,10 @@ export const About = () => {
           <SplitScreen>
             <Text className="border-4 text-white text-center text-3xl tracking-wider p-5">
               Mes compétences
-              <span>{content}</span>
             </Text>
+            <ul className="grid grid-flow-col auto-cols-max grid-rows-4 gap-4 p-5 justify-center">
+              {content}
+            </ul>
           </SplitScreen>
         </div>
       </FullScreen>

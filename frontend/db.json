@@ -2,78 +2,83 @@
   "skills": [
     {
       "id": 0,
-      "title": "html",
-      "img": "/src/assets/skills/html.png"
+      "title": "HTML5",
+      "img": "/src/assets/images/skills/html5.png"
     },
     {
       "id": 1,
-      "title": "CSS",
-      "img": "/src/assets/skills/css.png"
+      "title": "CSS3",
+      "img": "/src/assets/images/skills/css3.png"
     },
     {
       "id": 2,
       "title": "JS",
-      "img": "/src/assets/skills/javascript.png"
+      "img": "/src/assets/images/skills/javascript.png"
     },
     {
       "id": 3,
       "title": "NodeJS",
-      "img": "/src/assets/skills/nodejs.png"
+      "img": "/src/assets/images/skills/nodejs.png"
     },
     {
       "id": 4,
       "title": "React",
-      "img": "/src/assets/skills/react.png"
+      "img": "/src/assets/images/skills/react.png"
     },
     {
       "id": 5,
       "title": "PHP",
-      "img": "/src/assets/skills/php.png"
+      "img": "/src/assets/images/skills/php.png"
     },
     {
       "id": 6,
       "title": "Symfony",
-      "img": "/src/assets/skills/symfony.png"
+      "img": "/src/assets/images/skills/symfony.png"
     },
     {
       "id": 7,
       "title": "Sass",
-      "img": "/src/assets/skills/sass.png"
+      "img": "/src/assets/images/skills/sass.png"
     },
     {
       "id": 8,
       "title": "Tailwind",
-      "img": "/src/assets/skills/tailwind.png"
+      "img": "/src/assets/images/skills/tailwind.png"
     },
     {
       "id": 9,
       "title": "NoSql",
-      "img": "/src/assets/skills/mongoDB.png"
+      "img": "/src/assets/images/skills/mongoDB.png"
     },
     {
       "id": 10,
       "title": "MySql",
-      "img": "/src/assets/skills/mysql.png"
+      "img": "/src/assets/images/skills/mysql.png"
     },
     {
       "id": 11,
       "title": "WordPress",
-      "img": "/src/assets/skills/wordpress.png"
+      "img": "/src/assets/images/skills/wordpress.png"
     },
     {
       "id": 12,
       "title": "Figma",
-      "img": "/src/assets/skills/figma.png"
+      "img": "/src/assets/images/skills/figma.png"
     },
     {
       "id": 13,
       "title": "Git",
-      "img": "/src/assets/skills/git.png"
+      "img": "/src/assets/images/skills/git.png"
     },
     {
       "id": 14,
       "title": "Github",
-      "img": "/src/assets/skills/github.png"
+      "img": "/src/assets/images/skills/github.png"
+    },
+    {
+      "id": 15,
+      "title": "Bootstrap",
+      "img": "/src/assets/images/skills/bootstrap.png"
     }
   ],
 

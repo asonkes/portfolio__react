@@ -4,4 +4,6 @@
   --font-homenaje: "Homenaje", sans-serif;
 
   --color-indigo-special: rgba(100, 97, 242, 0.95);
+  --color-white-special: rgba(255, 255, 255, 0.39);
+  --color-mix-special: linear-gradient(90deg, #6a06ec, #dc00f0);
 }
