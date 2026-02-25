@@ -3,5 +3,5 @@
 @theme {
   --font-homenaje: "Homenaje", sans-serif;
 
-  --color-indigo-special: "rgba(100,97,242,0.95)";
+  --color-indigo-special: rgba(100, 97, 242, 0.95);
 }
