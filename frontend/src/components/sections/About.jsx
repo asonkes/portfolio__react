@@ -1,3 +1,4 @@
+import * as React from 'react';
 import { useRef, useEffect, useState } from "react";
 import { FullScreen } from "../layout/FullScreen";
 import { SplitScreen } from "../layout/SplitScreen";
@@ -8,6 +9,47 @@ import bgAbout from "../../assets/images/background/fond-texture-peinture-marbre
 export const About = () => {
   // Elément que l'on va animer
   const textRef = useRef(null);
+
+  // Appel à l'API
+  const [APIState, setAPIState] = useState([])
+
+  // On appelle les data
+  // video : 11min56
+  useEffect(() => {
+    setAPIState(...APIState)
+    fetch(`http://localhost:5173/db.json`)
+    .then(res => {
+      console.log(res);
+      return res.json()
+    })
+    .then(data => {
+      console.log(data);
+      setAPIState({error: false, data: data})
+    })
+    .catch((error) => {
+      console.log(error);
+      setAPIState({error: true, data: undefined})
+    })
+
+  }, []);
+
+  // Contenu que l'on veut retourner
+  let content;
+  if(APIState.loading) content = <p>load....</p>
+  else if(APIState.error) content = <p>Une erreur est survenue...</p>
+  else if(APIState.data?.length > 0) {
+    content = <div>
+      {APIState.data.map(element => {
+        <div key={element.id}>
+          <img src={element.img} alt={element.title} />
+        </div>
+      })}
+    </div>
+  }
+  else if(APIState.data?.length === 0) {
+    content = <p>Votre requête ne correspond à aucune donnée !</p>
+  }
+
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -69,6 +111,7 @@ export const About = () => {
           <SplitScreen>
             <Text className="border-4 text-white text-center text-3xl tracking-wider p-5">
               Mes compétences
+              <span>{content}</span>
             </Text>
           </SplitScreen>
         </div>
