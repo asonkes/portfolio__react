@@ -1,11 +1,14 @@
 import { FullScreen } from "../layout/FullScreen";
 import { Title } from "../ui/Title";
+import { Card } from "../ui/card";
 
 export const Projects = () => {
+
   return (
     <>
       <FullScreen className="min-h-screen border-4 border-red-400">
         <Title title="Projects" />
+         <Card/>
       </FullScreen>
     </>
   );

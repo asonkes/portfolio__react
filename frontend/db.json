@@ -93,24 +93,11 @@
       "site": "",
       "maquette": "",
       "git": "",
-      "code": "",
+      "code": "HTML - CSS - React",
       "description": "Exercice de base en React, permettant de reprendre toutes les bases de React pour évoluer par la suite."
     },
     {
       "id": 1,
-      "date": "",
-      "formation": "Interface3",
-      "type": "WordPress Examen",
-      "title": "GossipCop",
-      "img": "",
-      "site": "https://wordpress.audrey-sonkes.be/",
-      "maquette": "",
-      "git": "",
-      "code": "",
-      "description": "Réalisation d'un projet en utilisant WordPress comme base."
-    },
-    {
-      "id": 2,
       "date": "novembre 2024",
       "formation": "EPSE",
       "type": "Projet TEI",
@@ -123,7 +110,7 @@
       "description": "Site e-commerce en Symfony dédié à la vente de produits BIO provenant de la ferme et d'autres producteurs locaux. Possibilité pour les utilisateurs de 'liker' différents produits, paiement en ligne via la plateforme 'Stripe'. Tout a été misé sur la fluidité de navigation pour le consommateur. La maquette de ce projet a été réalisé entièrement par mes soins."
     },
     {
-      "id": 3,
+      "id": 2,
       "date": "juin 2024",
       "formation": "EPSE",
       "type": "Projet fin d'étude",
@@ -136,7 +123,7 @@
       "description": "Site e-commerce en Symfony dédié à la vente de vêtements pour bébés (de 3 à 36 mois) et pour enfants (de 2 à 14ans). La possibilité pour les utilisateurs de 'liker' différents produits n'est pas fonctionnelle, et le paiement en ligne n'est pas possible. De plus, la fluidité de navigation pour le consommateur ne me semble pas encore assez aboutie. Tous les éléments manquants et les améliorations seront intégrés dans le projet de mon TEI. La maquette de ce projet a été réalisée entièrement par mes soins."
     },
     {
-      "id": 4,
+      "id": 3,
       "date": "février 2024",
       "formation": "EPSE",
       "type": "WordPress Examen",
@@ -149,7 +136,7 @@
       "description": "Réalisation d'un projet en utilisant WordPress comme base."
     },
     {
-      "id": 5,
+      "id": 4,
       "date": "décembre 2023",
       "formation": "EPSE",
       "type": "1er Projet Symfony",
@@ -162,7 +149,7 @@
       "description": "Mon 1er projet e-commerce en Symfony, base de données est existante mais l'intégration des images se fait essentiellement par les URL. Il est possible de modifier les annonces en modififant les URL. La fonctionnalité de connexion et de déconnexion fonctionnent. Et l'admin est reconnu lors de la connexion pour pouvoir modifier les annonces. La conception de la maquette a été fournie par notre professeur, et j'ai réalisé sa mise en oeuvre en HTML et CSS."
     },
     {
-      "id": 7,
+      "id": 5,
       "date": "juin 2023",
       "formation": "EPSE",
       "type": "Projet Fin 1ère année",
@@ -175,10 +162,10 @@
       "description": "Projet de fin d'année 2023 réaklisé en HTML et CSS. La conception de la mise en page a été entièrement imaginé par mes soins."
     },
     {
-      "id": 8,
+      "id": 6,
       "date": "décembre 2022",
       "formation": "EPSE",
-      "type": "Projet Cours(HTML/CSS)",
+      "type": "Projet Cours",
       "title": "50 Nuances de Grey",
       "img": "/src/assets/images/projects/50NuancesDeGrey.webp",
       "site": "https://50nuancesdegrey.audrey-sonkes.be/",
