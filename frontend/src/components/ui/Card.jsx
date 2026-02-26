@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { Button } from "./Button";
+import { ButtonNeverBorder } from "./ButtonNeverBorder";
 
 export const Card = () => {
   const [isHover, setIsHover] = useState(false);
@@ -50,17 +52,17 @@ export const Card = () => {
                 >
                   {/** Image par défaut */}
                   <img
-                    className={`absolute inset-0 w-full h-60 object-cover transition-opacity duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] ${isHover === element.id ? "opacity-0" : "opacity-100"}`}
+                    className={`absolute inset-0 w-full h-60 object-cover transition-all duration-300 ease-out ${isHover === element.id ? "opacity-0" : "opacity-100"}`}
                     src={element.img}
                     alt={element.title}
                   />
 
                   {/** Image en Hover */}
                   <div
-                    className={`relative w-full h-60 flex justify-center items-center border-4 border-red-500 transition-opacity duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] ${isHover === element.id ? "opacity-100" : "opacity-0"}`}
+                    className={`relative w-full h-60 flex justify-center items-center transition-all duration-750 ease-in ${isHover === element.id ? "opacity-100" : "opacity-0"}`}
                   >
                     <img
-                      className="absolute inset-0 w-full h-58 object-cover"
+                      className="absolute inset-0 w-full h-60 object-cover"
                       src="/src/assets/images/background/flux-conception-code-binaire_53876-97406.webp"
                       alt="icone représentant le cycle du web"
                     />
@@ -83,41 +85,17 @@ export const Card = () => {
                   </div>
                 </div>
 
-                <div
-                  className="
-                      relative 
-                      inline-block
-                      bg-black 
-                      rounded-2xl 
-                      text-center 
-                      text-xl 
-                      m-5 
-                      z-10 
-                      hover:scale-110
-                      after:content-['']
-                      after:absolute
-                      after:top-0
-                      after:-inset-0.5
-                      after:z-0
-                    "
-                  style={{ background: "var(--color-mix-special)" }}
-                >
-                  <a
-                    className="
-                        relative 
-                        inlin-block
-                        w-25 
-                        bg-black 
-                        text-center 
-                        rounded-xl 
-                        text-fuchsia-200
-                        z-10"
-                    href={element.site}
-                    target="_blank"
-                  >
-                    Visiter le site
-                  </a>
-                </div>
+                <Button href={element.site} size="w-26">
+                  Visiter le site
+                </Button>
+                <Button href={element.maquette} size="w-40">
+                  Explorer la maquette
+                </Button>
+                <Button href={element.code} size="w-32">
+                  Consulter le code
+                </Button>
+
+                <ButtonNeverBorder />
               </div>
             </li>
           );
