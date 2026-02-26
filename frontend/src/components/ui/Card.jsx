@@ -64,7 +64,7 @@ export const Card = () => {
                               <a className="w-full flex justify-center" 
                               href={element.site} target="_blank">
                                 <img 
-                                  className="h-[1.875rem] hover:scale-110"
+                                  className="h-7.5 hover:scale-110"
                                   src="/src/assets/images/icons/Globe-256.png" 
                                   alt="icone représentant le cycle du web" 
                                 />
@@ -76,14 +76,44 @@ export const Card = () => {
                     }
                   </div>
 
-                  <button className="buttonLink buttonLink--small text-white">
+                  <button 
+                    className="
+                      relative 
+                      inline-block
+                      bg-black 
+                      rounded-2xl 
+                      text-center 
+                      text-xl 
+                      m-5 
+                      z-10 
+                      hover:scale-110
+                      after:content-['']
+                      after:absolute
+                      after:top-0
+                      after:-inset-0.5
+                      after:z-0
+                    "
+                    style={{ background: "var(--color-mix-special)" }}
+                  >
                     <a 
-                      className="buttonLink buttonLink--small text-white"
+                      className="
+                        relative 
+                        inlin-block
+                        w-25 
+                        bg-black 
+                        text-center 
+                        rounded-xl 
+                        text-fuchsia-200
+                        z-10
+
+                        
+                        
+                        "
                       href={element.site}
                       target="_blank"  
                       >
-                      
-                      </a>
+                        Visiter le site
+                    </a>
                   </button>
 
                 </div>

@@ -46,7 +46,7 @@ export const Skill = () => {
         </>
     );
     } else if (APIState.data?.length === 0) {
-    content = <p>Votre requête ne correspond à aucune donnée !</p>;
+        content = <p>Votre requête ne correspond à aucune donnée !</p>;
     }
 
     return (
