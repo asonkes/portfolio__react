@@ -44,15 +44,15 @@ export const About = () => {
         bgImage={bgAbout}
       >
         <Title title="About" />
-        <div className="w-full max-w-7xl flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row">
+        <div className="w-full max-w-7xl flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row border-4 border-red-400">
           <SplitScreen className="flex justify-center items-center">
             <Text
-              className={`text-center tracking-wider p-8 lg:p-12 -translate-x-full opacity-0 transition-all duration-2500 ease-out
+              className={`text-center tracking-wider p-5 -translate-x-full opacity-0 transition-all duration-2500 ease-out
                 ${isVisible ? "translate-x-0 opacity-100" : ""}`}
               ref={textRef}
             >
               <span className="text-indigo-500 text-4xl">" </span>
-              <span className="text-fuchsia-300 text-xl italic sm:text-2xl">
+              <span className="text-fuchsia-300 text-xl lg:text-2xl italic">
                 En pleine reconversion professionnelle, <br></br>
                 Je me suis lancée dans l'informatique après <br></br>
                 une quinzaine d'années en tant que fleuriste. <br></br>
@@ -71,7 +71,7 @@ export const About = () => {
             <Text className="text-white text-center text-3xl tracking-wider p-12">
               Mes compétences
             </Text>
-              <Skill/>
+            <Skill />
           </SplitScreen>
         </div>
       </FullScreen>

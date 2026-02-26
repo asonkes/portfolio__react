@@ -7,30 +7,28 @@ export const Header = () => {
 
   // On utilise un 'useEffect' pour pouvoir fermer notre 'burger' en cliquant en dehors de celui-ci
   useEffect(() => {
-
     let closeBurger = (event) => {
-      if(!menuRef.current.contains(event.target)) {
+      if (!menuRef.current.contains(event.target)) {
         setShowMenu(false);
       }
-    }
+    };
 
-    document.addEventListener('mousedown', closeBurger);
+    document.addEventListener("mousedown", closeBurger);
 
-    return() => {
+    return () => {
       document.removeEventListener("mousedown", closeBurger);
-    }
-
-  }, [])
+    };
+  }, []);
 
   return (
     <header className="w-full fixed z-50 bg-indigo-500 py-5">
-      {/** Pas mettre la 'ref' dans ul 
-       * ==>  ici ref sur nav 
-       * ==> englobe tout le menu et donc fait partie de la nav... 
+      {/** Pas mettre la 'ref' dans ul
+       * ==>  ici ref sur nav
+       * ==> englobe tout le menu et donc fait partie de la nav...
        * ==> donc que je clique en dehors de l'icone ou pas pas ==> pas de problème
        * ==> tout le ul est compris dedans ==> a retenir si de nouveau le problème !!!
-       * 
-      */}
+       *
+       */}
       <nav className="relative" ref={menuRef}>
         <ul
           className={`
@@ -61,7 +59,7 @@ export const Header = () => {
           </li>
         </ul>
         <div
-          className="flex justify-end text-white text-4xl mr-5 cursor-pointer lg:hidden"
+          className="flex justify-end text-white text-3xl mr-5 cursor-pointer lg:hidden"
           onClick={() => setShowMenu(!showMenu)}
         >
           {showMenu ? (
