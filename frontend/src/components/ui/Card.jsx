@@ -35,7 +35,7 @@ export const Card = () => {
                   <span className="text-fuchsia-300">{element.type}</span>
                   <span className="text-indigo-400">
                     {" "}
-                    ({element.formation}){" "}
+                    ( {element.formation} ){" "}
                   </span>
                 </h3>
                 {/**<p class="absolute w-32 -top-14 text-center text-18 text-white p-2 rounded-2xl">{element.date}</p>**/}
@@ -44,40 +44,46 @@ export const Card = () => {
                 </p>
 
                 <div
-                  className="w-full h-60 flex grow items-center"
-                  onMouseEnter={() => setIsHover(true)}
+                  className="relative w-full h-60 flex items-center"
+                  onMouseEnter={() => setIsHover(element.id)}
                   onMouseLeave={() => setIsHover(false)}
                 >
-                  {isHover ? (
-                    <div className="relative flex justify-center items-center border-4 border-red-500">
-                      <img
-                        className=""
-                        src="/src/assets/images/background/flux-conception-code-binaire_53876-97406.webp"
-                        alt="icone représentant le cycle du web"
-                      />
-                      <div className="absolute flex-col justify-center items-center">
-                        <p className="my-2 text-lg tracking-wider">
-                          {element.code}
-                        </p>
-                        <a
-                          className="w-full flex justify-center"
-                          href={element.site}
-                          target="_blank"
-                        >
-                          <img
-                            className="h-7.5 hover:scale-110"
-                            src="/src/assets/images/icons/Globe-256.png"
-                            alt="icone représentant le cycle du web"
-                          />
-                        </a>
-                      </div>
+                  {/** Image par défaut */}
+                  <img
+                    className={`absolute inset-0 w-full h-60 object-cover transition-opacity duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] ${isHover === element.id ? "opacity-0" : "opacity-100"}`}
+                    src={element.img}
+                    alt={element.title}
+                  />
+
+                  {/** Image en Hover */}
+                  <div
+                    className={`relative w-full h-60 flex justify-center items-center border-4 border-red-500 transition-opacity duration-500 ease-[cubic-bezier(0.25,0.1,0.25,1)] ${isHover === element.id ? "opacity-100" : "opacity-0"}`}
+                  >
+                    <img
+                      className="absolute inset-0 w-full h-58 object-cover"
+                      src="/src/assets/images/background/flux-conception-code-binaire_53876-97406.webp"
+                      alt="icone représentant le cycle du web"
+                    />
+                    <div className="absolute flex-col justify-center items-center">
+                      <p className="my-2 text-lg tracking-wider">
+                        {element.code}
+                      </p>
+                      <a
+                        className="w-full flex justify-center"
+                        href={element.site}
+                        target="_blank"
+                      >
+                        <img
+                          className="h-7.5 hover:scale-110"
+                          src="/src/assets/images/icons/Globe-256.png"
+                          alt="icone représentant le cycle du web"
+                        />
+                      </a>
                     </div>
-                  ) : (
-                    <img src={element.img} alt={element.title} />
-                  )}
+                  </div>
                 </div>
 
-                <button
+                <div
                   className="
                       relative 
                       inline-block
@@ -111,7 +117,7 @@ export const Card = () => {
                   >
                     Visiter le site
                   </a>
-                </button>
+                </div>
               </div>
             </li>
           );

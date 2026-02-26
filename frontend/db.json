@@ -84,19 +84,6 @@
 
   "projects": [
     {
-      "id": 0,
-      "date": "",
-      "formation": "Interface3",
-      "type": "TodoList React",
-      "title": "TodoList",
-      "img": "",
-      "site": "",
-      "maquette": "",
-      "git": "",
-      "code": "HTML - CSS - React",
-      "description": "Exercice de base en React, permettant de reprendre toutes les bases de React pour évoluer par la suite."
-    },
-    {
       "id": 1,
       "date": "novembre 2024",
       "formation": "EPSE",
