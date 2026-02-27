@@ -5,7 +5,7 @@ export const ButtonNeverBorder = () => {
         En savoir plus
       </p>
       <div className="flex items-center p-1.5">
-        <i class="fa-solid fa-chevron-right"></i>
+        <i className="fa-solid fa-chevron-right"></i>
       </div>
     </div>
   );
