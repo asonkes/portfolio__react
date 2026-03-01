@@ -20,6 +20,7 @@ export const About = () => {
   useEffect(() => {
     fetch("http://localhost:3000/skills")
       .then((res) => {
+        if (!res.ok) throw new Error();
         return res.json();
       })
       .then((data) => {
@@ -32,7 +33,8 @@ export const About = () => {
 
   // Contenu que l'on veut retourner
   let content;
-  if (APIState.error) content = <p>Une erreur est survenur</p>;
+  if (APIState.error)
+    content = <p className="text-white">Une erreur est survenue</p>;
   if (APIState.data?.length > 0) {
     content = (
       <>
@@ -40,6 +42,13 @@ export const About = () => {
           return <Skill key={element.id} element={element} />;
         })}
       </>
+    );
+  }
+  if (APIState.data?.length === 0) {
+    content = (
+      <p className="text-white">
+        Votre requête ne correspond à aucune donnée !
+      </p>
     );
   }
 

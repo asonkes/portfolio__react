@@ -12,6 +12,7 @@ export const Projects = () => {
   useEffect(() => {
     fetch("http://localhost:3000/projects")
       .then((res) => {
+        if (!res.ok) throw new Error("Erreur mauvaise ressource");
         return res.json();
       })
       .then((data) => {
@@ -23,8 +24,9 @@ export const Projects = () => {
   }, []);
 
   let content;
-  if (APIState.error) content = <p>Une erreur est survenue...</p>;
-  else if (APIState.data?.length > 0) {
+  if (APIState.error)
+    content = <p className="text-white">Une erreur est survenue...</p>;
+  if (APIState.data?.length > 0) {
     content = (
       <>
         {APIState.data.map((element) => {
@@ -32,8 +34,13 @@ export const Projects = () => {
         })}
       </>
     );
-  } else if (APIState.data?.length === 0) {
-    content = <p>Votre requête ne correspond à aucune donnée !</p>;
+  }
+  if (APIState.data?.length === 0) {
+    content = (
+      <p className="text-white">
+        Votre requête ne correspond à aucune donnée !
+      </p>
+    );
   }
 
   return (
