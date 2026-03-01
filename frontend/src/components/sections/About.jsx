@@ -15,6 +15,7 @@ export const About = () => {
   // Cet élément va apparaître 1fois
   // Seulement après la 1ere apparition dans le DOM de son élément
   useEffect(() => {
+    if (!textRef.current) return;
     // On met 'text.current' ==> car = à un objet
     // On transforme l'objet en élément du DOM (ici la balise 'p' du composant 'Text')
     // if (!textRef.current) return;
