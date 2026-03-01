@@ -7,21 +7,45 @@ import { Skill } from "../ui/Skill";
 import bgAbout from "../../assets/images/background/fond-texture-peinture-marbree-liquide-peinture-fluide-texture-abstraite-fond-ecran-melange-couleurs-.webp";
 
 export const About = () => {
-  // Elément que l'on va animer
+  // Référence de l'élément que l'on va animer
   const textRef = useRef(null);
-
   const [isVisible, setIsVisible] = useState(false);
 
-  // Cet élément va apparaître 1fois
-  // Seulement après la 1ere apparition dans le DOM de son élément
+  // Appel à l'API
+  const [APIState, setAPIState] = useState({
+    error: false,
+    data: undefined,
+  });
+
+  useEffect(() => {
+    fetch("http://localhost:3000/skills")
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        setAPIState({ error: false, data });
+      })
+      .catch(() => {
+        setAPIState({ error: true, data: undefined });
+      });
+  }, []);
+
+  // Contenu que l'on veut retourner
+  let content;
+  if (APIState.error) content = <p>Une erreur est survenur</p>;
+  if (APIState.data?.length > 0) {
+    content = (
+      <>
+        {APIState.data.map((element) => {
+          return <Skill key={element.id} element={element} />;
+        })}
+      </>
+    );
+  }
+
   useEffect(() => {
     if (!textRef.current) return;
-    // On met 'text.current' ==> car = à un objet
-    // On transforme l'objet en élément du DOM (ici la balise 'p' du composant 'Text')
-    // if (!textRef.current) return;
 
-    // Quand on créé un 'observer' => on reçoit en retour un tableau(entries)
-    // entries[0] ==> veut dire ==> 'utilisateur n'est pas encore passé sur l'élément'
     const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         setIsVisible(true);
@@ -72,7 +96,10 @@ export const About = () => {
             <Text className="text-white text-center text-3xl tracking-wider p-12">
               Mes compétences
             </Text>
-            <Skill />
+
+            <ul className="w-8/12 m-auto md:w-5/12 lg:w-full flex justify-center items-center flex-wrap gap-5">
+              {content}
+            </ul>
           </SplitScreen>
         </div>
       </FullScreen>
