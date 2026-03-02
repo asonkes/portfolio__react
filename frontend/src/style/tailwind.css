@@ -8,6 +8,16 @@
   --color-mix-special: linear-gradient(90deg, #6a06ec, #dc00f0);
 }
 
+@keyframes cursor {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 /**
 sm → 640px (40rem)
 md → 768px (48rem)

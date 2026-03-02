@@ -1,7 +1,5 @@
-import style from './TriangleTransparent.module.css';
+import style from "./TriangleTransparent.module.css";
 
 export const TriangleTransparent = () => {
-  return (
-    <div className={style.triangleTransparent}></div>
-  )
-}
+  return <div className={style.triangleTransparent}></div>;
+};

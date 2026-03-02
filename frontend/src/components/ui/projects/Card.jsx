@@ -1,3 +1,7 @@
+/*****************************************/
+/*** Composant Card - partie projects  ***/
+/*****************************************/
+
 import { useState, useRef, useEffect } from "react";
 import { Button } from "../shared/button/Button";
 import { ButtonNeverBorder } from "../shared/button/ButtonNeverBorder";
@@ -109,8 +113,6 @@ export const Card = (props) => {
         className={`circle absolute w-6 h-6 -top-12 -left-10 flex justify-center items-center bg-fuchsia-500 rounded-2xl sm:-left-15 sm:w-8 sm:h-8 lg:left-auto lg:[li:nth-child(odd)_&]:-right-14 lg:[li:nth-child(even)_&]:-left-14
               after:absolute after:content-[''] after:h-3 after:sm:h-5 after:w-3 after:sm:w-5 after:bg-indigo-500 after:rounded-2xl after:transform after:translate-x-[-12.5] after:translate-y-[-12.5] transition-opacity duration-3000 ${isVisible ? "opacity-100" : "opacity-0"}`}
       ></div>
-
-    
     </li>
   );
 };

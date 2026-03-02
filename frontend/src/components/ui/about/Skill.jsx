@@ -1,3 +1,7 @@
+/********************************************/
+/*** Composant Skill - partie compétences ***/
+/********************************************/
+
 export const Skill = ({ element }) => {
   return (
     <div key={element.id} className="flex flex-col justify-center items-center">

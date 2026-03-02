@@ -1,3 +1,7 @@
+/*************************************************************************/
+/*** Composant Triangle - affiche l'image de la personne - partie Home ***/
+/*************************************************************************/
+
 import style from "./TriangleTwo.module.css";
 
 export const TriangleTwo = () => {

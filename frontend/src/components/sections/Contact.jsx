@@ -1,7 +1,11 @@
+/***********************************/
+/*** Composant session Contact  ****/
+/***********************************/
+
 import { useState } from "react";
 import { FullScreen } from "../layout/FullScreen";
 import { SplitScreen } from "../layout/SplitScreen";
-import {Form} from "../ui/contact/Form";
+import { Form } from "../ui/contact/Form";
 import { Text } from "../ui/shared/Text";
 import { Title } from "../ui/shared/Title";
 
@@ -18,15 +22,13 @@ export const Contact = () => {
         <Title title="Contact" />
 
         <div className="w-11/12 xl:w-9/12 flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row">
-          <SplitScreen 
-            className="flex justify-center items-center"
-          >
+          <SplitScreen className="flex justify-center items-center">
             {/** Alors ici, malgré qu'il y ai pas de paramètre, il FAUT une fonction flêchée, pk?
                 Car React attend une exécution de fonction dans le TEMPS
                 Qui se déroulera APRES, qd l'utilisateur aura intéragit...
             */}
 
-            <div 
+            <div
               className="relative"
               onMouseEnter={() => setIsHover(true)}
               onMouseLeave={() => setIsHover(false)}
@@ -55,7 +57,7 @@ export const Contact = () => {
             <Text className="text-fuchsia-400 text-center text-3xl tracking-wider pt-20 pb-6">
               Me contacter
             </Text>
-            <Form/>
+            <Form />
           </SplitScreen>
         </div>
       </FullScreen>

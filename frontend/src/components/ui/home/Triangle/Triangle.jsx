@@ -1,3 +1,7 @@
+/*********************************************************************/
+/*** Composant Triangle - affiche background indigo - partie Home  ***/
+/*********************************************************************/
+
 import style from "./Triangle.module.css";
 
 export const Triangle = () => {

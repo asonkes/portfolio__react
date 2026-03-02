@@ -1,3 +1,7 @@
+/********************************/
+/*** Composant session About  ***/
+/********************************/
+
 import { useRef, useEffect, useState } from "react";
 import { FullScreen } from "../layout/FullScreen";
 import { SplitScreen } from "../layout/SplitScreen";
@@ -73,10 +77,7 @@ export const About = () => {
 
   return (
     <>
-      <FullScreen
-        className="flex flex-col min-h-screen"
-        bgImage={bgAbout}
-      >
+      <FullScreen className="flex flex-col min-h-screen" bgImage={bgAbout}>
         <Title title="About" />
         <div className="w-full max-w-7xl flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row">
           <SplitScreen className="flex justify-center items-center">
