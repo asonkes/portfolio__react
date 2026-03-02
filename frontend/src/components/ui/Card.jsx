@@ -35,7 +35,7 @@ export const Card = (props) => {
   return (
     <li
       ref={cardRef}
-      className="relative w-full z-40 mb-25 odd:self-start even:self-end odd:ml-0 even:mr-0 lg:w-3/6 lg:-mb-35 lg:odd:-ml-10"
+      className="relative w-full z-40 mb-25 lg:-mb-35 odd:self-start even:self-end odd:ml-0 even:mr-0 lg:w-3/6 lg:odd:-ml-10 lg:even:-mr-10"
     >
       <div
         className={`relative w-full z-40 border border-white rounded-2xl transition-all duration-4000 ${isVisible ? "opacity-100 [li:nth-child(odd)_&]:left-0 [li:nth-child(even)_&]:right-0" : "opacity-0 [li:nth-child(odd)_&]:left-[-150%] [li:nth-child(even)_&]:right-[-150%]"}`}
@@ -106,9 +106,11 @@ export const Card = (props) => {
       </div>
 
       <div
-        className={`circle absolute w-6 h-6 -top-12 -left-10 flex justify-center items-center bg-fuchsia-500 rounded-2xl inset-0 sm:-left-15 lg:left-auto lg:[li:nth-child(odd)_&]:-right-14 lg:[li:nth-child(even)_&]:-left-14
-              after:absolute after:content-[''] after:w-3 after:h-3 after:sm:w-5 after:sm:h-5 after:bg-indigo-500 after:rounded-2xl after:transform after:translate-x-[-12.5] after:translate-y-[-12.5] transition-opacity duration-3000 ${isVisible ? "opacity-100" : "opacity-0"}`}
+        className={`circle absolute w-6 h-6 -top-12 -left-10 flex justify-center items-center bg-fuchsia-500 rounded-2xl sm:-left-15 sm:w-8 sm:h-8 lg:left-auto lg:[li:nth-child(odd)_&]:-right-14 lg:[li:nth-child(even)_&]:-left-14
+              after:absolute after:content-[''] after:h-3 after:sm:h-5 after:w-3 after:sm:w-5 after:bg-indigo-500 after:rounded-2xl after:transform after:translate-x-[-12.5] after:translate-y-[-12.5] transition-opacity duration-3000 ${isVisible ? "opacity-100" : "opacity-0"}`}
       ></div>
+
+    
     </li>
   );
 };

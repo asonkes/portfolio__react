@@ -1,12 +1,66 @@
 @import "../../../style//variables.css";
 
+.triangle {
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  background-color: var(--bg);
+  transform: rotate(-90deg) skewX(-30deg) scale(1, .866);
+  z-index: 10;
+
+  @media (max-width: 800px) {
+    left: 30%;
+  }
+
+  @media (max-width: 600px) {
+    left: 25%;
+  }
+
+  @media (max-width: 500px) {
+    left: 22%;
+  }
+
+  @media (max-width: 400px) {
+    left: 14%;
+  }
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+  }
+
+  &:before {
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+  }
+
+  &:after {
+    transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+  }
+}
+
 .triangle,
 .triangle::before,
 .triangle::after {
-  height: 280px;
   width: 280px;
+  height: 280px;
   border-top-right-radius: 20%;
-  background-color: var(--bg);
+
+  @media (max-width: 1500px) {
+    width: 250px;
+    height: 250px;
+  }
+
+  @media (max-width: 1300px) {
+    width: 230px;
+    height: 230px;
+  }
+
+  @media (max-width: 1100px) {
+    width: 220px;
+    height: 220px;
+  }
 
   @media (max-width: 800px) {
     width: 210px;
@@ -23,52 +77,13 @@
     height: 170px;
   }
 
-  @media (max-width: 400px) {
+  @media (max-width: 350px) {
     width: 155px;
     height: 155px;
   }
 
   @media (max-width: 350px) {
-    width: 145px;
-    height: 145px;
-  }
-}
-
-.triangle {
-  position: absolute;
-  left: 35%;
-  top: 25%;
-  transform: rotate(-90deg) skewX(-30deg) scaleY(0.866);
-  z-index: 10;
-
-  @media (max-width: 800px) {
-    left: 30%;
-  }
-
-  @media (max-width: 600px) {
-    left: 25%;
-  }
-
-  @media (max-width: 500px) {
-    left: 22%;
-  }
-
-  @media (max-width: 400px) {
-    left: 18%;
-  }
-
-  &:before,
-  &:after {
-    position: absolute;
-    content: "";
-  }
-
-  &:before {
-    transform: rotate(-135deg) skewX(-45deg) scale(1.414, 0.707)
-      translateY(-50%);
-  }
-
-  &:after {
-    transform: rotate(135deg) skewY(-45deg) scale(0.707, 1.414) translate(50%);
+    width: 140px;
+    height: 140px;
   }
 }

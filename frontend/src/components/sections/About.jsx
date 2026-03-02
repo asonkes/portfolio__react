@@ -34,7 +34,7 @@ export const About = () => {
   // Contenu que l'on veut retourner
   let content;
   if (APIState.error)
-    content = <p className="text-white">Une erreur est survenue</p>;
+    content = <p className="text-white">Une erreur est survenue...</p>;
   if (APIState.data?.length > 0) {
     content = (
       <>
@@ -74,11 +74,11 @@ export const About = () => {
   return (
     <>
       <FullScreen
-        className="flex flex-col min-h-screen border-4 border-orange-400"
+        className="flex flex-col min-h-screen"
         bgImage={bgAbout}
       >
         <Title title="About" />
-        <div className="w-full max-w-7xl flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row border-4 border-red-400">
+        <div className="w-full max-w-7xl flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row">
           <SplitScreen className="flex justify-center items-center">
             <Text
               className={`text-center tracking-wider p-5 -translate-x-full opacity-0 transition-all duration-2500 ease-out

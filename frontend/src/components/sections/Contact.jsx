@@ -45,7 +45,7 @@ export const Contact = () => {
                */}
               <img
                 src={imgOrdiColor}
-                className={`w-full sm:w-9/12 xl:w-full 2xl:w-9/12 m-auto absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                className={`w-full sm:w-9/12 xl:w-10/12 2xl:w-9/12 m-auto absolute inset-0 transition-opacity duration-1000 ease-in-out ${
                   isHover ? "opacity-100" : "opacity-0"
                 }`}
               />

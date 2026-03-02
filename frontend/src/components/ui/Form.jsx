@@ -9,7 +9,7 @@ export const Form = () => {
             </div>
             <div className="w-full text-lg text-fuchsia-400">
                 <input 
-                    class="placeholder:text-white-special border-2 border-transparent border-b-white" 
+                    class="w-auto placeholder:text-white-special border-2 border-b-white border-transparent outline-none sm:w-full" 
                     type="text" 
                     id="firstname" 
                     name="firstname" 
@@ -26,7 +26,7 @@ export const Form = () => {
             </div>
             <div className="w-full text-lg text-fuchsia-400">
                 <input 
-                    class="placeholder:text-white-special border-2 border-transparent border-b-white" 
+                    class="w-auto placeholder:text-white-special border-2 border-transparent border-b-white outline-none sm:w-full" 
                     type="text" 
                     id="lastname" 
                     name="lastname" 
@@ -43,7 +43,7 @@ export const Form = () => {
             </div>
             <div className="w-full text-lg text-fuchsia-400">
                 <input 
-                    class="placeholder:text-white-special border-2 border-transparent border-b-white" 
+                    class="w-auto placeholder:text-white-special border-2 border-transparent border-b-white outline-none sm:w-full" 
                     type="text" 
                     id="email" 
                     name="email" 
@@ -60,7 +60,7 @@ export const Form = () => {
             </div>
             <div className="w-full text-lg text-fuchsia-400">
                 <input 
-                    class="placeholder:text-white-special border-2 border-transparent border-b-white" 
+                    class="w-auto placeholder:text-white-special border-2 border-transparent border-b-white outline-none sm:w-full" 
                     type="text" 
                     id="message" 
                     name="message" 

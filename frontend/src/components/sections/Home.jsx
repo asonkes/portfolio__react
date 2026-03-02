@@ -3,6 +3,7 @@ import bgHome from "../../assets/images/background/splash-gouttes-eau_23-2147828
 import { Triangle } from "../ui/Triangle/Triangle";
 import { TriangleTwo } from "../ui/TriangleTwo/TriangleTwo";
 import { AnimationText } from "../ui/AnimationText";
+import {TriangleTransparent} from "../ui/TriangleTransparent/TriangleTransparent";
 
 export const Home = () => {
   return (
@@ -12,6 +13,7 @@ export const Home = () => {
         className="min-h-[calc(100vh-64px)] opacity-15"
         bgImage={bgHome}
       />
+      <TriangleTransparent/>
       <Triangle />
       <TriangleTwo />
       <AnimationText />
