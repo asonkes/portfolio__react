@@ -6,7 +6,7 @@ export const Button = (props) => {
   const { href, children, size } = props;
 
   return (
-    <div className="flex text-base sm:text-xl text-indigo-500 m-5 ">
+    <div className="flex text-base text-indigo-500 m-5 sm:text-xl">
       <a
         className={`${size} relative inline-block bg-black rounded-2xl text-center z-10 text-fuchsia-200 hover:scale-110
             after:content-[''] 

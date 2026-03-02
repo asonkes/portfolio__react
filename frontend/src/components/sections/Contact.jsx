@@ -3,6 +3,7 @@ import { FullScreen } from "../layout/FullScreen";
 import { SplitScreen } from "../layout/SplitScreen";
 import { Title } from "../ui/Title";
 import { Text } from "../ui/Text";
+import { Form } from "../ui/form";
 
 // Ici pas un composant (import d'une image) => donc pas d'accolade
 import imgOrdi from "../../assets/images/images/ordi-transparent-1.webp";
@@ -13,12 +14,12 @@ export const Contact = () => {
 
   return (
     <>
-      <FullScreen className="h-screen flex flex-col border-4 border-yellow-400">
+      <FullScreen className="min-h-screen flex flex-col lg:min-screen">
         <Title title="Contact" />
 
-        <div className="w-full max-w-7xl flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row border-4 border-red-400">
+        <div className="w-full flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row">
           <SplitScreen 
-            className="flex justify-center items-center border-4 border-yellow-400"
+            className="flex justify-center items-center"
           >
             {/** Alors ici, malgré qu'il y ai pas de paramètre, il FAUT une fonction flêchée, pk?
                 Car React attend une exécution de fonction dans le TEMPS
@@ -35,7 +36,7 @@ export const Contact = () => {
                */}
               <img
                 src={imgOrdi}
-                className={`transition-opacity duration-1000 ease-in-out ${
+                className={`w-full sm:w-9/12 xl:w-full 2xl:w-9/12 m-auto transition-opacity duration-1000 ease-in-out ${
                   isHover ? "opacity-0" : "opacity-100"
                 }`}
               />
@@ -44,16 +45,17 @@ export const Contact = () => {
                */}
               <img
                 src={imgOrdiColor}
-                className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                className={`w-full sm:w-9/12 xl:w-full 2xl:w-9/12 m-auto absolute inset-0 transition-opacity duration-1000 ease-in-out ${
                   isHover ? "opacity-100" : "opacity-0"
                 }`}
               />
             </div>
           </SplitScreen>
           <SplitScreen>
-            <Text className="border-4 text-fuchsia-300 text-center text-3xl tracking-wider p-5">
+            <Text className="text-fuchsia-400 text-center text-3xl tracking-wider pt-20 pb-6">
               Me contacter
             </Text>
+            <Form/>
           </SplitScreen>
         </div>
       </FullScreen>

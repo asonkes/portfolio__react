@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { FullScreen } from "../layout/FullScreen";
 import { Title } from "../ui/Title";
-import { Card } from "../ui/Card";
+import { Card } from "../ui/card";
 
 export const Projects = () => {
   const [APIState, setAPIState] = useState({

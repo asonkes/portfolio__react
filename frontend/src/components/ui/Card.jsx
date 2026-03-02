@@ -35,22 +35,22 @@ export const Card = (props) => {
   return (
     <li
       ref={cardRef}
-      className="relative z-40 w-full lg:w-3/6 mb-25 lg:-mb-35 odd:self-start even:self-end odd:ml-0 even:-mr-10 lg:odd:-ml-10"
+      className="relative w-full z-40 mb-25 odd:self-start even:self-end odd:ml-0 even:mr-0 lg:w-3/6 lg:-mb-35 lg:odd:-ml-10"
     >
       <div
-        className={`relative z-40 w-full border border-white rounded-2xl transition-all duration-4000 ${isVisible ? "opacity-100 [li:nth-child(odd)_&]:left-0 [li:nth-child(even)_&]:right-0" : "opacity-0 [li:nth-child(odd)_&]:left-[-150%] [li:nth-child(even)_&]:right-[-150%]"}`}
+        className={`relative w-full z-40 border border-white rounded-2xl transition-all duration-4000 ${isVisible ? "opacity-100 [li:nth-child(odd)_&]:left-0 [li:nth-child(even)_&]:right-0" : "opacity-0 [li:nth-child(odd)_&]:left-[-150%] [li:nth-child(even)_&]:right-[-150%]"}`}
       >
-        <h3 className="text-center text-xl sm:text-2xl my-3">
+        <h3 className="text-center text-xl my-3 sm:text-2xl">
           <span className="text-fuchsia-300">{element.type}</span>
           <span className="text-indigo-400"> ({element.formation}) </span>
         </h3>
         <p
-          className="absolute w-32 -top-14 text-center text-base sm:text-lg text-white p-2 rounded-2xl lg:[li:nth-child(odd)_&]:right-0 lg:[li:nth-child(even)_&]:left-0"
+          className="absolute w-32 -top-14 text-center text-base text-white p-2 rounded-2xl sm:text-lg lg:[li:nth-child(odd)_&]:right-0 lg:[li:nth-child(even)_&]:left-0"
           style={{ background: "var(--color-mix-special)" }}
         >
           {element.date}
         </p>
-        <p className="text-center text-base sm:text-xl text-white my-3">
+        <p className="text-center text-base text-white my-3 sm:text-xl">
           {element.title}
         </p>
 
@@ -61,7 +61,7 @@ export const Card = (props) => {
         >
           {/** Image par défaut */}
           <img
-            className={`absolute inset-0 w-full h-60 object-cover transition-all duration-300 ease-out ${isHover === element.id ? "opacity-0" : "opacity-100"}`}
+            className={`absolute w-full h-60 inset-0 object-cover transition-all duration-300 ease-out ${isHover === element.id ? "opacity-0" : "opacity-100"}`}
             src={element.img}
             alt={element.title}
           />
@@ -71,7 +71,7 @@ export const Card = (props) => {
             className={`relative w-full h-60 flex justify-center items-center transition-all duration-750 ease-in ${isHover === element.id ? "opacity-100" : "opacity-0"}`}
           >
             <img
-              className="absolute inset-0 w-full h-60 object-cover"
+              className="absolute w-full h-60 inset-0 object-cover"
               src="/src/assets/images/background/flux-conception-code-binaire_53876-97406.webp"
               alt="icone représentant le cycle du web"
             />
@@ -106,8 +106,8 @@ export const Card = (props) => {
       </div>
 
       <div
-        className={`circle absolute w-6 h-6 -top-12 -left-10 flex justify-center items-center bg-fuchsia-500 rounded-2xl sm:-left-15 sm:w-8 sm:h-8 lg:left-auto lg:[li:nth-child(odd)_&]:-right-14 lg:[li:nth-child(even)_&]:-left-14
-              after:absolute after:content-[''] after:h-3 after:sm:h-5 after:w-3 after:sm:w-5 after:bg-indigo-500 after:rounded-2xl after:transform after:translate-x-[-12.5] after:translate-y-[-12.5] transition-opacity duration-3000 ${isVisible ? "opacity-100" : "opacity-0"}`}
+        className={`circle absolute w-6 h-6 -top-12 -left-10 flex justify-center items-center bg-fuchsia-500 rounded-2xl inset-0 sm:-left-15 lg:left-auto lg:[li:nth-child(odd)_&]:-right-14 lg:[li:nth-child(even)_&]:-left-14
+              after:absolute after:content-[''] after:w-3 after:h-3 after:sm:w-5 after:sm:h-5 after:bg-indigo-500 after:rounded-2xl after:transform after:translate-x-[-12.5] after:translate-y-[-12.5] transition-opacity duration-3000 ${isVisible ? "opacity-100" : "opacity-0"}`}
       ></div>
     </li>
   );
