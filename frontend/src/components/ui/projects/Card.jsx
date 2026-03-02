@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
-import { Button } from "./Button";
-import { ButtonNeverBorder } from "./ButtonNeverBorder";
+import { Button } from "../shared/button/Button";
+import { ButtonNeverBorder } from "../shared/button/ButtonNeverBorder";
 
 export const Card = (props) => {
   const { element } = props;

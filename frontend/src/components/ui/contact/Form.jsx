@@ -1,4 +1,3 @@
-
 export const Form = () => {
   return (
     <form className="w-full flex justify-center">

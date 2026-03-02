@@ -1,9 +1,9 @@
 import { SplitScreen } from "../layout/SplitScreen";
 import bgHome from "../../assets/images/background/splash-gouttes-eau_23-21478283951.webp";
-import { Triangle } from "../ui/Triangle/Triangle";
-import { TriangleTwo } from "../ui/TriangleTwo/TriangleTwo";
-import { AnimationText } from "../ui/AnimationText";
-import {TriangleTransparent} from "../ui/TriangleTransparent/TriangleTransparent";
+import { Triangle } from "../ui/home/Triangle/Triangle";
+import { TriangleTwo } from "../ui/home/TriangleTwo/TriangleTwo";
+import { TriangleTransparent } from "../ui/home/TriangleTransparent/TriangleTransparent";
+import { AnimationText } from "../ui/home/AnimationText";
 
 export const Home = () => {
   return (

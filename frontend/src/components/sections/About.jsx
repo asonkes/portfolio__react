@@ -1,9 +1,9 @@
 import { useRef, useEffect, useState } from "react";
 import { FullScreen } from "../layout/FullScreen";
 import { SplitScreen } from "../layout/SplitScreen";
-import { Title } from "../ui/Title";
-import { Text } from "../ui/Text";
-import { Skill } from "../ui/Skill";
+import { Skill } from "../ui/about/Skill";
+import { Title } from "../ui/shared/Title";
+import { Text } from "../ui/shared/Text";
 import bgAbout from "../../assets/images/background/fond-texture-peinture-marbree-liquide-peinture-fluide-texture-abstraite-fond-ecran-melange-couleurs-.webp";
 
 export const About = () => {
@@ -34,7 +34,7 @@ export const About = () => {
   // Contenu que l'on veut retourner
   let content;
   if (APIState.error)
-    content = <p className="text-white">Une erreur est survenue...</p>;
+    content = <p className="text-white">Une erreur est survenue</p>;
   if (APIState.data?.length > 0) {
     content = (
       <>

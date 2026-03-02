@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { FullScreen } from "../layout/FullScreen";
 import { SplitScreen } from "../layout/SplitScreen";
-import { Title } from "../ui/Title";
-import { Text } from "../ui/Text";
-import { Form } from "../ui/form";
+import {Form} from "../ui/contact/Form";
+import { Text } from "../ui/shared/Text";
+import { Title } from "../ui/shared/Title";
 
 // Ici pas un composant (import d'une image) => donc pas d'accolade
 import imgOrdi from "../../assets/images/images/ordi-transparent-1.webp";
@@ -17,7 +17,7 @@ export const Contact = () => {
       <FullScreen className="min-h-screen flex flex-col lg:min-screen">
         <Title title="Contact" />
 
-        <div className="w-full flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row">
+        <div className="w-11/12 xl:w-9/12 flex flex-1 flex-col mx-auto items-center justify-center lg:flex-row">
           <SplitScreen 
             className="flex justify-center items-center"
           >
@@ -36,7 +36,7 @@ export const Contact = () => {
                */}
               <img
                 src={imgOrdi}
-                className={`w-full sm:w-9/12 xl:w-full 2xl:w-9/12 m-auto transition-opacity duration-1000 ease-in-out ${
+                className={`w-full sm:w-9/12 xl:w-full 2xl:w-10/12 m-auto transition-opacity duration-1000 ease-in-out ${
                   isHover ? "opacity-0" : "opacity-100"
                 }`}
               />
@@ -45,7 +45,7 @@ export const Contact = () => {
                */}
               <img
                 src={imgOrdiColor}
-                className={`w-full sm:w-9/12 xl:w-10/12 2xl:w-9/12 m-auto absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+                className={`w-full sm:w-9/12 xl:w-full 2xl:w-10/12 m-auto absolute inset-0 transition-opacity duration-1000 ease-in-out ${
                   isHover ? "opacity-100" : "opacity-0"
                 }`}
               />
