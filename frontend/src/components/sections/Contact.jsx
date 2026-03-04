@@ -16,39 +16,6 @@ import imgOrdiColor from "../../assets/images/images/ordi-color.webp";
 export const Contact = () => {
   const [isHover, setIsHover] = useState(false);
 
-  const [APIState, setAPIState] = useState({
-    error: false,
-    data: undefined,
-  });
-
-  useEffect(() => {
-    fetch("http://localhost:3000/api/messages")
-      .then((res) => {
-        if (!res.ok) throw new Error();
-        return res.json();
-      })
-      .then((data) => {
-        setAPIState({ error: false, data });
-      })
-      .catch(() => {
-        setAPIState({ error: true, data: undefined });
-      });
-  }, []);
-
-  // Contenu que l'on veut retourner
-  let content;
-
-  if (APIState.error) {
-    content = <p className="text-white">Une erreur est survenue...</p>;
-  }
-  if (APIState.data?.length === 0) {
-    content = (
-      <p className="text-white">
-        Votre message n'a pas été envoyé, veuillez réessayer plus tard...
-      </p>
-    );
-  }
-
   return (
     <>
       <FullScreen className="min-h-screen flex flex-col lg:min-screen">
@@ -91,8 +58,6 @@ export const Contact = () => {
               Me contacter
             </Text>
             <Form />
-
-            {content}
           </SplitScreen>
         </div>
       </FullScreen>

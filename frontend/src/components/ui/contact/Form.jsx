@@ -2,10 +2,40 @@
 /*** Composant Formulaire - partie contact ***/
 /*********************************************/
 
+import { useState } from "react";
+
 export const Form = () => {
+  const [APIState, setAPIState] = useState({
+    error: false,
+    success: false,
+  });
+
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(new FormData(event.target));
+
+    // Récupération des données du formulaire
+    const formData = new FormData(event.target);
+    const data = Object.fromEntries(formData.entries());
+
+    fetch("http://localhost:3100/api/messages", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => {
+        if (!res.ok) throw new Error();
+      })
+      .then(() => {
+        setAPIState({ error: false, success: true });
+        // On vide le formulaire
+        event.target.reset();
+      })
+      .catch(() => {
+        setAPIState({ error: true, success: false });
+      });
   };
 
   return (
@@ -77,6 +107,10 @@ export const Form = () => {
         <button className="w-37 mx-auto my-10 text-white text-xl border-2 border-white rounded-2xl p-2 cursor-pointer hover:text-fuchsia-300 hover:scale-105">
           Envoyer
         </button>
+        {APIState.success && <p className="text-green-400">Message envoyé !</p>}
+        {APIState.error && (
+          <p className="text-red-400">Erreur lors de l'envoi...</p>
+        )}
       </div>
     </form>
   );
