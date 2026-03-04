@@ -18,22 +18,7 @@ export const Contact = () => {
 
   const [APIState, setAPIState] = useState({
     error: false,
-    data: [
-      {
-        _id: "1",
-        firstname: "Tiphaine",
-        lastname: "Dupont",
-        email: "tiphaine@test.com",
-        text: "Ceci est un message de test !",
-      },
-      {
-        _id: "2",
-        firstname: "Jean",
-        lastname: "Martin",
-        email: "jean@test.com",
-        text: "Voici un autre message pour voir le rendu.",
-      },
-    ],
+    data: undefined,
   });
 
   useEffect(() => {
