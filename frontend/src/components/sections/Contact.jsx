@@ -2,7 +2,7 @@
 /*** Composant session Contact  ****/
 /***********************************/
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FullScreen } from "../layout/FullScreen";
 import { SplitScreen } from "../layout/SplitScreen";
 import { Form } from "../ui/contact/Form";
@@ -15,6 +15,74 @@ import imgOrdiColor from "../../assets/images/images/ordi-color.webp";
 
 export const Contact = () => {
   const [isHover, setIsHover] = useState(false);
+
+  const [APIState, setAPIState] = useState({
+    error: false,
+    data: [
+      {
+        _id: "1",
+        firstname: "Tiphaine",
+        lastname: "Dupont",
+        email: "tiphaine@test.com",
+        text: "Ceci est un message de test !",
+      },
+      {
+        _id: "2",
+        firstname: "Jean",
+        lastname: "Martin",
+        email: "jean@test.com",
+        text: "Voici un autre message pour voir le rendu.",
+      },
+    ],
+  });
+
+  useEffect(() => {
+    fetch("http://localhost:3000/api/messages")
+      .then((res) => {
+        if (!res.ok) throw new Error();
+        return res.json();
+      })
+      .then((data) => {
+        setAPIState({ error: false, data });
+      })
+      .catch(() => {
+        setAPIState({ error: true, data: undefined });
+      });
+  }, []);
+
+  // Contenu que l'on veut retourner
+  let content;
+
+  if (APIState.error) {
+    content = <p className="text-white">Une erreur est survenue...</p>;
+  }
+  if (APIState.data?.length > 0) {
+    content = (
+      <div className="flex flex-col gap-4">
+        {APIState.data.map((element) => (
+          <div
+            key={element._id}
+            className="text-fuchsia-400 border-b border-white p-2"
+          >
+            <p>
+              <strong>
+                {element.firstname} {element.lastname}
+              </strong>{" "}
+              ({element.email})
+            </p>
+            <p>{element.text}</p>
+          </div>
+        ))}
+      </div>
+    );
+  }
+  if (APIState.data?.length === 0) {
+    content = (
+      <p className="text-white">
+        Votre message n'a pas été envoyé, veuillez réessayer plus tard...
+      </p>
+    );
+  }
 
   return (
     <>
@@ -58,6 +126,8 @@ export const Contact = () => {
               Me contacter
             </Text>
             <Form />
+
+            {content}
           </SplitScreen>
         </div>
       </FullScreen>

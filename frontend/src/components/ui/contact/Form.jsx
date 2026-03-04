@@ -3,20 +3,13 @@
 /*********************************************/
 
 export const Form = () => {
-
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(new FormData(event.target));
-    
-
-
-  }
+  };
 
   return (
-    <form 
-      className="w-full flex justify-center"
-      onSubmit={handleSubmit}
-    >
+    <form className="w-full flex justify-center" onSubmit={handleSubmit}>
       <div className="w-full sm:w-5/6 flex flex-col">
         <div className="w-fit m-auto my-3 flex">
           <div className="w-32 text-white text-xl">
@@ -71,14 +64,13 @@ export const Form = () => {
             <label htmlFor="message">Message</label>
           </div>
           <div className="w-full text-lg text-fuchsia-400">
-            <textarea 
+            <textarea
               className="w-auto placeholder:text-white-special border-2 border-transparent border-b-white outline-none resize-none sm:w-full"
-              name="message" 
+              name="message"
               id="message"
               required="required"
               placeholder="Veuillez indiquer votre message..."
-            >
-            </textarea>
+            ></textarea>
           </div>
         </div>
 
