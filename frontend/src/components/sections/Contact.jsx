@@ -41,26 +41,6 @@ export const Contact = () => {
   if (APIState.error) {
     content = <p className="text-white">Une erreur est survenue...</p>;
   }
-  if (APIState.data?.length > 0) {
-    content = (
-      <div className="flex flex-col gap-4">
-        {APIState.data.map((element) => (
-          <div
-            key={element._id}
-            className="text-fuchsia-400 border-b border-white p-2"
-          >
-            <p>
-              <strong>
-                {element.firstname} {element.lastname}
-              </strong>{" "}
-              ({element.email})
-            </p>
-            <p>{element.text}</p>
-          </div>
-        ))}
-      </div>
-    );
-  }
   if (APIState.data?.length === 0) {
     content = (
       <p className="text-white">
