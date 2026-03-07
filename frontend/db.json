@@ -84,6 +84,18 @@
 
   "projects": [
     {
+      "id": 0,
+      "date": "Décembre 2026",
+      "formation": "Interface3",
+      "type": "Exercice JS",
+      "title": "Memory",
+      "img": "/src/assets/images/projects/memory.png",
+      "site": "https://memory.audrey-sonkes.be/",
+      "git": "https://github.com/asonkes/Memory__V2",
+      "code": "HTML - CSS - JS",
+      "description": "Jeu de memory avec JS avec 3 thèmes et 3 niveaux de complexité"
+    },
+    {
       "id": 1,
       "date": "novembre 2024",
       "formation": "EPSE",
