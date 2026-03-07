@@ -93,7 +93,7 @@
       "site": "https://memory.audrey-sonkes.be/",
       "git": "https://github.com/asonkes/Memory__V2",
       "code": "HTML - CSS - JS",
-      "description": "Jeu de memory avec JS avec 3 thèmes et 3 niveaux de complexité"
+      "description": "Jeu de memory réalisé en JS. Ce site est essentiellement dédié aux enfants, avec 3 thèmes (Pat Patrouille, Dora et les dinosaures) et 3 niveaux de complexité + timer. La conception de la mise en page a été entièrement imaginé par mes soins, ainsi que les card"
     },
     {
       "id": 1,
@@ -106,7 +106,7 @@
       "maquette": "https://www.figma.com/design/r9p9oupFqemCvu8LSEiBkc/TEI---Octobre-2024?node-id=0-1&node-type=canvas&t=JLZ1C2jnSd4RS4Wh-0",
       "git": "https://github.com/asonkes/fermeDeTiti",
       "code": "Symfony - PHP - SCSS - Twig - JS",
-      "description": "Site e-commerce en Symfony dédié à la vente de produits BIO provenant de la ferme et d'autres producteurs locaux. Possibilité pour les utilisateurs de 'liker' différents produits, paiement en ligne via la plateforme 'Stripe'. Tout a été misé sur la fluidité de navigation pour le consommateur. La maquette de ce projet a été réalisé entièrement par mes soins."
+      "description": "Site e-commerce en Symfony dédié à la vente de produits BIO provenant de la ferme et d'autres producteurs locaux. Possibilité pour les utilisateurs de 'liker' différents produits, paiement en ligne via la plateforme 'Stripe'. Tout a été misé sur la fluidité de navigation pour le consommateur. La maquette de ce projet a été réalisé entièrement par mes soins"
     },
     {
       "id": 2,
@@ -119,7 +119,7 @@
       "maquette": "www.figma.com/design/w6XUCOSEukmwK0zdTs9kYm/Jacadi?node-id=0-1&p=f",
       "git": "https://github.com/asonkes/Jacadi",
       "code": "Symfony - PHP - SCSS - Twig - JS",
-      "description": "Site e-commerce en Symfony dédié à la vente de vêtements pour bébés (de 3 à 36 mois) et pour enfants (de 2 à 14ans). La possibilité pour les utilisateurs de 'liker' différents produits n'est pas fonctionnelle, et le paiement en ligne n'est pas possible. De plus, la fluidité de navigation pour le consommateur ne me semble pas encore assez aboutie. Tous les éléments manquants et les améliorations seront intégrés dans le projet de mon TEI. La maquette de ce projet a été réalisée entièrement par mes soins."
+      "description": "Site e-commerce en Symfony dédié à la vente de vêtements pour bébés (de 3 à 36 mois) et pour enfants (de 2 à 14ans). La possibilité pour les utilisateurs de 'liker' différents produits n'est pas fonctionnelle, et le paiement en ligne n'est pas possible. De plus, la fluidité de navigation pour le consommateur ne me semble pas encore assez aboutie. Tous les éléments manquants et les améliorations seront intégrés dans le projet de mon TEI. La maquette de ce projet a été réalisée entièrement par mes soins"
     },
     {
       "id": 3,
@@ -132,7 +132,7 @@
       "maquette": "",
       "git": "",
       "code": "HTML - CSS - PHP - JS",
-      "description": "Réalisation d'un projet en utilisant WordPress comme base."
+      "description": "Réalisation d'un projet en utilisant WordPress comme base"
     },
     {
       "id": 4,
@@ -145,7 +145,7 @@
       "maquette": "",
       "git": "https://github.com/asonkes/garage",
       "code": "Synfony - PHP - CSS - Twig - JS",
-      "description": "Mon 1er projet e-commerce en Symfony, base de données est existante mais l'intégration des images se fait essentiellement par les URL. Il est possible de modifier les annonces en modififant les URL. La fonctionnalité de connexion et de déconnexion fonctionnent. Et l'admin est reconnu lors de la connexion pour pouvoir modifier les annonces. La conception de la maquette a été fournie par notre professeur, et j'ai réalisé sa mise en oeuvre en HTML et CSS."
+      "description": "Mon 1er projet e-commerce en Symfony, base de données est existante mais l'intégration des images se fait essentiellement par les URL. Il est possible de modifier les annonces en modififant les URL. La fonctionnalité de connexion et de déconnexion fonctionnent. Et l'admin est reconnu lors de la connexion pour pouvoir modifier les annonces. La conception de la maquette a été fournie par notre professeur, et j'ai réalisé sa mise en oeuvre en HTML et CSS"
     },
     {
       "id": 5,
@@ -158,7 +158,7 @@
       "maquette": "https://www.figma.com/design/MlXQKciGyBfEEL6uZAZzW8/Projet-examen-(version-ordinateur)?node-id=0-1&node-type=canvas&t=EYSRmEPJ2eJ5zgo4-0",
       "git": "https://github.com/asonkes/projet-fin-d-annee-2023",
       "code": "HTML - CSS",
-      "description": "Projet de fin d'année 2023 réaklisé en HTML et CSS. La conception de la mise en page a été entièrement imaginé par mes soins."
+      "description": "Projet de fin d'année 2023 réaklisé en HTML et CSS. La conception de la mise en page a été entièrement imaginé par mes soins"
     },
     {
       "id": 6,
@@ -171,7 +171,7 @@
       "maquette": "",
       "git": "https://github.com/asonkes/50NuancesDeGrey",
       "code": "HTML - CSS",
-      "description": "Exercice réalisé entièrement en HTML et CSS. La conception de la mise en page a été entièrement imaginé par mes soins."
+      "description": "Exercice réalisé entièrement en HTML et CSS. La conception de la mise en page a été entièrement imaginé par mes soins"
     }
   ]
 }

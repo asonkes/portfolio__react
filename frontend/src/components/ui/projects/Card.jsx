@@ -11,6 +11,8 @@ export const Card = (props) => {
 
   const [isHover, setIsHover] = useState(false);
 
+  const [isActive, setIsActive] = useState(false);
+
   // Référence des éléments à observer
   const cardRef = useRef(null);
 
@@ -27,14 +29,14 @@ export const Card = (props) => {
           observer.unobserve(entry.target);
         }
       });
-    }, []);
+    });
 
     observer.observe(cardRef.current);
 
     return () => {
       observer.disconnect();
     };
-  });
+  }, []);
 
   return (
     <li
@@ -96,17 +98,34 @@ export const Card = (props) => {
           </div>
         </div>
 
-        <Button href={element.site} size="w-20 sm:w-26">
-          Visiter le site
-        </Button>
-        <Button href={element.maquette} size="w-30 sm:w-40">
-          Explorer la maquette
-        </Button>
-        <Button href={element.code} size="w-26 sm:w-32">
-          Consulter le code
-        </Button>
+        {element.site && (
+          <Button href={element.site} size="w-20 sm:w-26" target="_blank">
+            Visiter le site
+          </Button>
+        )}
+        {element.maquette && (
+          <Button href={element.maquette} size="w-30 sm:w-40" target="_blank">
+            Explorer la maquette
+          </Button>
+        )}
+        {element.code && (
+          <Button href={element.git} size="w-26 sm:w-32" target="_blank">
+            Consulter le code
+          </Button>
+        )}
 
-        <ButtonNeverBorder />
+        <ButtonNeverBorder onClick={() => setIsActive((prev) => !prev)} />
+
+        {isActive && (
+          <div className="text-lg m-5 text-white tracking-wide">
+            {element.description.split(". ").map((sentence, idx) => (
+              <p className="block mb-4" key={idx}>
+                {sentence.trim()}.
+                <br />
+              </p>
+            ))}
+          </div>
+        )}
       </div>
 
       <div
