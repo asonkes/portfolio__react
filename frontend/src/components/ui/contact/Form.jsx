@@ -107,9 +107,15 @@ export const Form = () => {
         <button className="w-37 mx-auto my-10 text-white text-xl border-2 border-white rounded-2xl p-2 cursor-pointer hover:text-fuchsia-300 hover:scale-105">
           Envoyer
         </button>
-        {APIState.success && <p className="text-green-400">Message envoyé !</p>}
+        {APIState.success && (
+          <p className="text-center text-lg text-green-400 pb-8 lg:pb-0">
+            Message envoyé !
+          </p>
+        )}
         {APIState.error && (
-          <p className="text-red-400">Erreur lors de l'envoi...</p>
+          <p className="text-center text-lg text-red-400 pb-8 lg:pb-0">
+            Erreur lors de l'envoi...
+          </p>
         )}
       </div>
     </form>
