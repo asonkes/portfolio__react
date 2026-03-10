@@ -25,7 +25,7 @@ export const About = () => {
     {
       /** en dev :  http://localhost:3000/skills */
     }
-    fetch("/db.json")
+    fetch("/prod.json")
       .then((res) => {
         if (!res.ok) throw new Error();
         return res.json();

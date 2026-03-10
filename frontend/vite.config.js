@@ -11,7 +11,7 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "db.json", // ton fichier à la racine du projet
+          src: "prod.json", // ton fichier à la racine du projet(db pour production)
           dest: ".", // copie à la racine du build
         },
       ],

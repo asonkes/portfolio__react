@@ -17,7 +17,7 @@ export const Projects = () => {
     {
       /** en dev :  http://localhost:3000/projects */
     }
-    fetch("/db.json")
+    fetch("/prod.json")
       .then((res) => {
         if (!res.ok) throw new Error("Erreur mauvaise ressource");
         return res.json();
