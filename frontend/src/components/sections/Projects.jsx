@@ -14,13 +14,19 @@ export const Projects = () => {
   });
 
   useEffect(() => {
-    fetch("http://localhost:3000/projects")
+    {
+      /** en dev :  http://localhost:3000/projects */
+    }
+    fetch("/db.json")
       .then((res) => {
         if (!res.ok) throw new Error("Erreur mauvaise ressource");
         return res.json();
       })
       .then((data) => {
-        setAPIState({ error: false, data });
+        {
+          /** en dev :  setAPIState({ error: false, data }) */
+        }
+        setAPIState({ error: false, data: data.projects });
       })
       .catch(() => {
         setAPIState({ error: true, data: undefined });

@@ -22,13 +22,19 @@ export const About = () => {
   });
 
   useEffect(() => {
-    fetch("http://localhost:3000/skills")
+    {
+      /** en dev :  http://localhost:3000/skills */
+    }
+    fetch("/db.json")
       .then((res) => {
         if (!res.ok) throw new Error();
         return res.json();
       })
       .then((data) => {
-        setAPIState({ error: false, data });
+        {
+          /** en dev :  setAPIState({ error: false, data }) */
+        }
+        setAPIState({ error: false, data: data.skills });
       })
       .catch(() => {
         setAPIState({ error: true, data: undefined });
