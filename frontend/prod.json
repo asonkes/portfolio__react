@@ -3,82 +3,82 @@
     {
       "id": 0,
       "title": "HTML5",
-      "img": "/assets/images/skills/html5.png"
+      "img": "/images/skills/html5.png"
     },
     {
       "id": 1,
       "title": "CSS3",
-      "img": "/assets/images/skills/css3.png"
+      "img": "/images/skills/css3.png"
     },
     {
       "id": 2,
       "title": "JS",
-      "img": "/assets/images/skills/javascript.png"
+      "img": "/images/skills/javascript.png"
     },
     {
       "id": 3,
       "title": "NodeJS",
-      "img": "/assets/images/skills/nodejs.png"
+      "img": "/images/skills/nodejs.png"
     },
     {
       "id": 4,
       "title": "React",
-      "img": "/assets/images/skills/react.png"
+      "img": "/images/skills/react.png"
     },
     {
       "id": 5,
       "title": "PHP",
-      "img": "/assets/images/skills/php.png"
+      "img": "/images/skills/php.png"
     },
     {
       "id": 6,
       "title": "Symfony",
-      "img": "/assets/images/skills/symfony.png"
+      "img": "/images/skills/symfony.png"
     },
     {
       "id": 7,
       "title": "Sass",
-      "img": "/assets/images/skills/sass.png"
+      "img": "/images/skills/sass.png"
     },
     {
       "id": 8,
       "title": "Tailwind",
-      "img": "/assets/images/skills/tailwind.png"
+      "img": "/skills/tailwind.png"
     },
     {
       "id": 9,
       "title": "NoSql",
-      "img": "/assets/images/skills/mongoDB.png"
+      "img": "/skills/mongoDB.png"
     },
     {
       "id": 10,
       "title": "MySql",
-      "img": "/assets/images/skills/mysql.png"
+      "img": "/images/skills/mysql.png"
     },
     {
       "id": 11,
       "title": "WordPress",
-      "img": "/assets/images/skills/wordpress.png"
+      "img": "/images/skills/wordpress.png"
     },
     {
       "id": 12,
       "title": "Figma",
-      "img": "/assets/images/skills/figma.png"
+      "img": "/images/skills/figma.png"
     },
     {
       "id": 13,
       "title": "Git",
-      "img": "/assets/images/skills/git.png"
+      "img": "/images/skills/git.png"
     },
     {
       "id": 14,
       "title": "Github",
-      "img": "/assets/images/skills/github.png"
+      "img": "/images/skills/github.png"
     },
     {
       "id": 15,
       "title": "Bootstrap",
-      "img": "/assets/images/skills/bootstrap.png"
+      "img": "/images/skills/bootstrap.png"
     }
   ],
 
@@ -89,7 +89,7 @@
       "formation": "Interface3",
       "type": "Exercice JS",
       "title": "Memory",
-      "img": "/assets/images/projects/memory.png",
+      "img": "/images/projects/memory.png",
       "site": "https://memory.audrey-sonkes.be/",
       "git": "https://github.com/asonkes/Memory__V2",
       "code": "HTML - CSS - JS",
@@ -101,7 +101,7 @@
       "formation": "EPSE",
       "type": "Projet TEI",
       "title": "Ferme de Warelles",
-      "img": "/assets/images/projects/fermeDeWarelles.webp",
+      "img": "/images/projects/fermeDeWarelles.webp",
       "site": "https://fermedewarelles.audrey-sonkes.be/",
       "maquette": "https://www.figma.com/design/r9p9oupFqemCvu8LSEiBkc/TEI---Octobre-2024?node-id=0-1&node-type=canvas&t=JLZ1C2jnSd4RS4Wh-0",
       "git": "https://github.com/asonkes/fermeDeTiti",
@@ -114,7 +114,7 @@
       "formation": "EPSE",
       "type": "Projet fin d'étude",
       "title": "Jacadi",
-      "img": "/assets/images/projects/jacadi.webp",
+      "img": "/images/projects/jacadi.webp",
       "site": "https://jacadi.audrey-sonkes.be/",
       "maquette": "www.figma.com/design/w6XUCOSEukmwK0zdTs9kYm/Jacadi?node-id=0-1&p=f",
       "git": "https://github.com/asonkes/Jacadi",
@@ -127,7 +127,7 @@
       "formation": "EPSE",
       "type": "WordPress Examen",
       "title": "GossipCop",
-      "img": "/assets/images/projects/gossipCop.webp",
+      "img": "/images/projects/gossipCop.webp",
       "site": "https://wordpress.audrey-sonkes.be/",
       "maquette": "",
       "git": "",
@@ -140,7 +140,7 @@
       "formation": "EPSE",
       "type": "1er Projet Symfony",
       "title": "SpeedCare",
-      "img": "/assets/images/projects/garage.webp",
+      "img": "/images/projects/garage.webp",
       "site": "https://garage.audrey-sonkes.be/",
       "maquette": "",
       "git": "https://github.com/asonkes/garage",
@@ -153,7 +153,7 @@
       "formation": "EPSE",
       "type": "Projet Fin 1ère année",
       "title": "LollyPop",
-      "img": "/assets/images/projects/lollyPop.webp",
+      "img": "/images/projects/lollyPop.webp",
       "site": "https://lollypop.audrey-sonkes.be/",
       "maquette": "https://www.figma.com/design/MlXQKciGyBfEEL6uZAZzW8/Projet-examen-(version-ordinateur)?node-id=0-1&node-type=canvas&t=EYSRmEPJ2eJ5zgo4-0",
       "git": "https://github.com/asonkes/projet-fin-d-annee-2023",
@@ -166,7 +166,7 @@
       "formation": "EPSE",
       "type": "Projet Cours",
       "title": "50 Nuances de Grey",
-      "img": "/assets/images/projects/50NuancesDeGrey.webp",
+      "img": "/images/projects/50NuancesDeGrey.webp",
       "site": "https://50nuancesdegrey.audrey-sonkes.be/",
       "maquette": "",
       "git": "https://github.com/asonkes/50NuancesDeGrey",
