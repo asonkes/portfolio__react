@@ -5,7 +5,6 @@
   left: 35%;
   position: absolute;
   z-index: 44;
-  border: 4px solid red;
 
   @media (max-width: 1500px) {
     width: 400px;
@@ -61,6 +60,7 @@
 .snip1573.hover::before {
   transform: skew(40deg) translateX(-60%);
 }
+
 .snip1573.hover::after {
   transform: skew(40deg) translateX(50%);
 }

@@ -44,7 +44,7 @@ export const Card = (props) => {
       className="relative w-full z-40 mb-25 lg:-mb-35 odd:self-start even:self-end odd:ml-0 even:mr-0 lg:w-3/6 lg:odd:-ml-10 lg:even:-mr-10"
     >
       <div
-        className={`relative w-full z-40 border border-white rounded-2xl transition-all duration-4000 ${isVisible ? "opacity-100 [li:nth-child(odd)_&]:left-0 [li:nth-child(even)_&]:right-0" : "opacity-0 [li:nth-child(odd)_&]:left-[-150%] [li:nth-child(even)_&]:right-[-150%]"}`}
+        className={`relative w-full z-40 border border-white rounded-2xl transition-all duration-3500 ${isVisible ? "opacity-100 [li:nth-child(odd)_&]:left-0 [li:nth-child(even)_&]:right-0" : "opacity-0 [li:nth-child(odd)_&]:left-[-150%] [li:nth-child(even)_&]:right-[-150%]"}`}
       >
         <h3 className="text-center text-xl my-3 sm:text-2xl">
           <span className="text-fuchsia-300">{element.type}</span>

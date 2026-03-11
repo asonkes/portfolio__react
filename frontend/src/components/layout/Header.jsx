@@ -33,7 +33,7 @@ export const Header = () => {
         <ul
           className={`
             lg:flex lg:justify-center lg:static lg:flex-row lg:w-auto bg-indigo-special
-            absolute top-14 right-0 flex-col w-full
+            absolute top-12 right-0 flex-col w-full
             ${showMenu ? "flex" : "hidden"}
             `}
         >
