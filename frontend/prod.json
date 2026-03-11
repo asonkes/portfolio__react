@@ -43,12 +43,12 @@
     {
       "id": 8,
       "title": "Tailwind",
-      "img": "/skills/tailwind.png"
+      "img": "images/skills/tailwind.png"
     },
     {
       "id": 9,
       "title": "NoSql",
-      "img": "/skills/mongoDB.png"
+      "img": "images/skills/mongoDB.png"
     },
     {
       "id": 10,
