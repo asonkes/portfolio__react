@@ -39,6 +39,8 @@ export const Contact = () => {
               <img
                 src={imgOrdi}
                 alt="Image d'un ordinateur avec juste les contours"
+                width={493}
+                height={369}
                 className={`w-full h-auto sm:w-9/12 xl:w-full 2xl:w-10/12 m-auto transition-opacity duration-1000 ease-in-out ${
                   isHover ? "opacity-0" : "opacity-100"
                 }`}

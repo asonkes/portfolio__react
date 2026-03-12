@@ -9,6 +9,16 @@ export const SplitScreen = (props) => {
         ${className}`}
       style={bgImage && { backgroundImage: `url(${bgImage})` }}
     >
+      {/** Préchargement LCP si bgImage existe */}
+      {bgImage && (
+        <img
+          src={bgImage}
+          alt="Hero background"
+          style={{ display: "none" }}
+          fetchPriority="high"
+        />
+      )}
+
       {/**
        * Children permet de dire s'il y a des autres composant
        * qui vont constitué le composant parent

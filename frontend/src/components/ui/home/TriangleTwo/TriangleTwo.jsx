@@ -11,6 +11,7 @@ export const TriangleTwo = () => {
         className={style.image}
         src="/images/images/Polygon-1.webp"
         alt="Image le personne qui a créé le portfolio"
+        fetchPriority="high"
       />
     </div>
   );
