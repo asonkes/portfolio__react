@@ -15,7 +15,7 @@ export const Home = () => {
 
   return (
     <div
-      className={`flex pt-16 ${Style.snip1573} ${isHover ? Style.hover : ""}`}
+      className={`relative flex pt-16 ${Style.snip1573} ${isHover ? Style.hover : ""}`}
     >
       <SplitScreen className="min-h-[calc(100vh-64px)] bg-black" />
       <SplitScreen

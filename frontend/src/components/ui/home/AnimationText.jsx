@@ -58,7 +58,7 @@ export const AnimationText = () => {
   }, [charIndex, currentTextIndex, isDeleting, isFinished, texts]);
 
   return (
-    <div className="absolute w-full h-fit right-[50%] flex flex-col bottom-62 translate-[50%] text-5xl text-center tracking-wider sm:text-6xl sm:bottom-37 lg:w-auto lg:flex-row lg:bottom-20">
+    <div className="absolute w-full h-fit right-[50%] flex flex-col bottom-50 translate-[50%] text-5xl text-center tracking-wider sm:text-6xl sm:bottom-37 lg:w-auto lg:flex-row lg:bottom-20">
       <span className="text-fuchsia-400">I'm a </span>
       <span className="relative ml:4 text-indigo-500 after:content-[''] after:absolute after:top-0 after:-right-1 after:bg-indigo-500 after:h-full after:w-1 after:animate-[cursor_1s_infinite]">
         {texts[currentTextIndex].substring(0, charIndex)}

@@ -27,11 +27,10 @@
 .snip1573 {
   transition: all 0.35s ease;
   position: relative;
+  overflow: hidden;
 
   &:before,
   &:after {
-    overflow: hidden;
-
     @media (min-width: 640px) {
       content: "";
       position: absolute;
