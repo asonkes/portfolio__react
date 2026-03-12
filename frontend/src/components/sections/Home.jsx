@@ -3,7 +3,7 @@
 /*******************************/
 import Style from "../ui/home/TriangleTransparent/TriangleTransparent.module.css";
 import { SplitScreen } from "../layout/SplitScreen";
-import bgHome from "../../assets/images/background/splash-gouttes-eau_23-21478283951.webp";
+import bgHome from "../../../public/images/background/splash-gouttes-eau_23-21478283951.webp";
 import { Triangle } from "../ui/home/Triangle/Triangle";
 import { TriangleTwo } from "../ui/home/TriangleTwo/TriangleTwo";
 import { TriangleTransparent } from "../ui/home/TriangleTransparent/TriangleTransparent";

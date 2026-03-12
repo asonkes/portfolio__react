@@ -10,8 +10,8 @@ import { Text } from "../ui/shared/Text";
 import { Title } from "../ui/shared/Title";
 
 // Ici pas un composant (import d'une image) => donc pas d'accolade
-import imgOrdi from "../../assets/images/images/ordi-transparent-1.webp";
-import imgOrdiColor from "../../assets/images/images/ordi-color.webp";
+import imgOrdi from "../../../public/images/images/ordi-transparent-1.webp";
+import imgOrdiColor from "../../../public/images/images/ordi-color.webp";
 
 export const Contact = () => {
   const [isHover, setIsHover] = useState(false);

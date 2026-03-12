@@ -8,7 +8,7 @@ import { SplitScreen } from "../layout/SplitScreen";
 import { Skill } from "../ui/about/Skill";
 import { Title } from "../ui/shared/Title";
 import { Text } from "../ui/shared/Text";
-import bgAbout from "../../assets/images/background/fond-texture-peinture-marbree-liquide-peinture-fluide-texture-abstraite-fond-ecran-melange-couleurs-.webp";
+import bgAbout from "../../../public/images/background/fond-texture-peinture-marbree-liquide-peinture-fluide-texture-abstraite-fond-ecran-melange-couleurs-.webp";
 
 export const About = () => {
   // Référence de l'élément que l'on va animer
@@ -25,7 +25,6 @@ export const About = () => {
     {
       /** en dev :  http://localhost:3000/skills */
     }
-    //lien vers db prod => prod.json
     fetch("/prod.json")
       .then((res) => {
         if (!res.ok) throw new Error();

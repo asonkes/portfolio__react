@@ -64,7 +64,7 @@ export const Header = () => {
           className="flex justify-end text-white text-3xl mr-5 cursor-pointer lg:hidden"
           onClick={() => setShowMenu(!showMenu)}
         >
-          {showMenu ? { faXmark } : { faBars }}
+          <FontAwesomeIcon icon={showMenu ? faXmark : faBars} />
         </div>
       </nav>
     </header>

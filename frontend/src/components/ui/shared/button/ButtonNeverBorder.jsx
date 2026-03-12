@@ -10,7 +10,9 @@ export const ButtonNeverBorder = ({ onClick }) => {
       <p className="underline underline-offset-4 decoration-2">
         En savoir plus
       </p>
-      <div className="flex items-center p-1.5">{faChevronRight}</div>
+      <div className="flex items-center p-1.5">
+        <FontAwesomeIcon icon={faChevronRight} />
+      </div>
     </div>
   );
 };
