@@ -84,12 +84,12 @@ export const Card = (props) => {
             <div className="absolute flex-col justify-center items-center">
               <p className="my-2 text-lg tracking-wider">{element.code}</p>
               <a
-                className="w-full flex justify-center"
+                className="w-full h-auto flex justify-center"
                 href={element.site}
                 target="_blank"
               >
                 <img
-                  className="h-7.5 hover:scale-110"
+                  className="w-7.5 h-7.5 hover:scale-110"
                   src="/images/icons/Globe-256.png"
                   alt="icone représentant le cycle du web"
                 />
