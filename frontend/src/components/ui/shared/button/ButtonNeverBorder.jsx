@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
+
 export const ButtonNeverBorder = ({ onClick }) => {
   return (
     <div
@@ -7,9 +10,7 @@ export const ButtonNeverBorder = ({ onClick }) => {
       <p className="underline underline-offset-4 decoration-2">
         En savoir plus
       </p>
-      <div className="flex items-center p-1.5">
-        <i className="fa-solid fa-chevron-right"></i>
-      </div>
+      <div className="flex items-center p-1.5">{faChevronRight}</div>
     </div>
   );
 };

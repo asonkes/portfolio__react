@@ -9,7 +9,7 @@ export const TriangleTwo = () => {
     <div className={style.triangleTwo}>
       <img
         className={style.image}
-        src="/src/assets/images/images/Polygon-1.webp"
+        src="/images/images/Polygon-1.webp"
         //lien production
         //src="/images/images/Polygon-1.webp"
         alt="Image le personne qui a créé le portfolio"

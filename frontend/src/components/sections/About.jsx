@@ -26,7 +26,7 @@ export const About = () => {
       /** en dev :  http://localhost:3000/skills */
     }
     //lien vers db prod => prod.json
-    fetch("/db.json")
+    fetch("/prod.json")
       .then((res) => {
         if (!res.ok) throw new Error();
         return res.json();
@@ -114,7 +114,7 @@ export const About = () => {
               Mes compétences
             </Text>
 
-            <ul className="w-8/12 m-auto md:w-5/12 lg:w-full flex justify-center items-center flex-wrap gap-5">
+            <ul className="w-8/12 pb-5 m-auto lg:pb-0 md:w-5/12 lg:w-full flex justify-center items-center flex-wrap gap-5">
               {content}
             </ul>
           </SplitScreen>

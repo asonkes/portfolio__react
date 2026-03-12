@@ -19,13 +19,16 @@ export const Form = () => {
     const data = Object.fromEntries(formData.entries());
 
     //adresse production: https://portfolio-react-backend-sonkes-projects-ead30aa1.vercel.app/api/messages
-    fetch("https://portfolio-react-backend.vercel.app/api/messages", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
+    fetch(
+      "https://portfolio-react-backend-sonkes-projects-ead30aa1.vercel.app/api/messages",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
       },
-      body: JSON.stringify(data),
-    })
+    )
       .then((res) => {
         if (!res.ok) throw new Error();
       })
@@ -105,19 +108,20 @@ export const Form = () => {
           </div>
         </div>
 
-        <button className="w-37 mx-auto my-10 text-white text-xl border-2 border-white rounded-2xl p-2 cursor-pointer hover:text-fuchsia-300 hover:scale-105">
-          Envoyer
-        </button>
         {APIState.success && (
-          <p className="text-center text-lg text-green-400 pb-8 lg:pb-0">
+          <p className="text-center text-lg text-green-400 pt-8">
             Message envoyé !
           </p>
         )}
         {APIState.error && (
-          <p className="text-center text-lg text-red-400 pb-8 lg:pb-0">
+          <p className="text-center text-lg text-red-400 pt-8">
             Erreur lors de l'envoi...
           </p>
         )}
+
+        <button className="w-37 mx-auto my-10 text-white text-xl border-2 border-white rounded-2xl p-2 cursor-pointer hover:text-fuchsia-300 hover:scale-105">
+          Envoyer
+        </button>
       </div>
     </form>
   );

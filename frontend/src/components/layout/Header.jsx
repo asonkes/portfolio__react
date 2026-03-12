@@ -1,5 +1,7 @@
 import { useEffect, useState, useRef } from "react";
 import { HashLink as Link } from "react-router-hash-link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -62,11 +64,7 @@ export const Header = () => {
           className="flex justify-end text-white text-3xl mr-5 cursor-pointer lg:hidden"
           onClick={() => setShowMenu(!showMenu)}
         >
-          {showMenu ? (
-            <i className="fa-solid fa-xmark"></i>
-          ) : (
-            <i className="fa-solid fa-bars"></i>
-          )}
+          {showMenu ? { faXmark } : { faBars }}
         </div>
       </nav>
     </header>
