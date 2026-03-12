@@ -78,7 +78,9 @@ export const Card = (props) => {
           >
             <img
               className="absolute w-full h-60 inset-0 object-cover"
-              src="/src/assets/images/background/flux-conception-code-binaire_53876-97406.webp"
+              src="src/assets/images/background/flux-conception-code-binaire_53876-97406.webp"
+              //lien production
+              //src="/images/background/flux-conception-code-binaire_53876-97406.webp"
               alt="icone représentant le cycle du web"
             />
             <div className="absolute flex-col justify-center items-center">
@@ -91,6 +93,8 @@ export const Card = (props) => {
                 <img
                   className="h-7.5 hover:scale-110"
                   src="/src/assets/images/icons/Globe-256.png"
+                  //lien production
+                  //src="/images/icons/Globe-256.png"
                   alt="icone représentant le cycle du web"
                 />
               </a>

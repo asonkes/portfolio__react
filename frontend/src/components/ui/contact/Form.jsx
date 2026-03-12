@@ -18,7 +18,8 @@ export const Form = () => {
     const formData = new FormData(event.target);
     const data = Object.fromEntries(formData.entries());
 
-    fetch("http://localhost:3100/api/messages", {
+    //adresse production: https://portfolio-react-backend-sonkes-projects-ead30aa1.vercel.app/api/messages
+    fetch("https://portfolio-react-backend.vercel.app/api/messages", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

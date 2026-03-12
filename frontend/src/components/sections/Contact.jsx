@@ -2,7 +2,7 @@
 /*** Composant session Contact  ****/
 /***********************************/
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FullScreen } from "../layout/FullScreen";
 import { SplitScreen } from "../layout/SplitScreen";
 import { Form } from "../ui/contact/Form";
